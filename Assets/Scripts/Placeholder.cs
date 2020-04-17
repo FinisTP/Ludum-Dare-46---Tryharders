@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Placeholder : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public GameObject character;
     void Start()
     {
         
@@ -13,6 +13,6 @@ public class Placeholder : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.A)) character.SetActive(!character.activeSelf);
     }
 }
