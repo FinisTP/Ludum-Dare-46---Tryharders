@@ -6,8 +6,14 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 2f;
     Animator anim;
+
+    // Thong tin nguoi choi
+    public bool infected = false;
+    float timeSneeze = 0;
+
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         anim = GetComponent<Animator>();
     }
 
@@ -15,6 +21,15 @@ public class PlayerMovement : MonoBehaviour
     {
         movementCheck();
         interactCheck();
+        if (infected)
+        {
+            timeSneeze += Time.deltaTime;
+            if (timeSneeze > 3)
+            {
+                timeSneeze = 0;
+                anim.SetTrigger("punch");
+            }
+        }
     }
     void interactCheck()
     {

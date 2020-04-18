@@ -69,4 +69,11 @@ public class BotController : MonoBehaviour
         gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(-transform.position.y * 10 + 100);
         
     }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (infected)
+        {
+            GameObject.Find("Player").GetComponent<PlayerMovement>().infected = true;
+        }
+    }
 }
