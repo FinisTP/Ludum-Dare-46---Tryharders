@@ -35,7 +35,9 @@ public class BotController : MonoBehaviour
             if(timeSneeze > 3)
             {
                 timeSneeze = 0;
-                anim.SetTrigger("punch");
+                anim.SetTrigger("punch"); 
+                GameObject player = GameObject.Find("Player");
+                if(gameObject.GetComponent<EdgeCollider2D>().bounds.Contains(player.transform.position)) player.GetComponent<PlayerMovement>().infected = true;
             }
         }
         if (pedestrian && timeStop < 0)
@@ -68,12 +70,5 @@ public class BotController : MonoBehaviour
         this.gameObject.transform.position += direction.normalized * Time.deltaTime *speed;
         gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(-transform.position.y * 10 + 100);
         
-    }
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (infected)
-        {
-            GameObject.Find("Player").GetComponent<PlayerMovement>().infected = true;
-        }
     }
 }
