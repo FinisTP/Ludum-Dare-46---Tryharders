@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: ce7c4e6898aca654392f86641eb020d4
   - enabled: 1
+    path: Assets/Scenes/IndoorScene.unity
+    guid: 5e3845152b0de1247acd10dbf1581cd1
+  - enabled: 1
+    path: Assets/Scenes/OutdoorScene.unity
+    guid: df7623aa174f54f44b0428f5312df0ea
+  - enabled: 1
+    path: Assets/Scenes/DowntownScene.unity
+    guid: ec1ef013460277b4da516bec66281c9f
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
