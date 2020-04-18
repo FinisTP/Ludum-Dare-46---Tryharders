@@ -6,7 +6,7 @@ public class Puzzle1 : MonoBehaviour
 {
     float time = 0;
     public float spawnTime = 2.5f;
-    public int rangeX = 20, rangeY = 3;
+    public float rangeX = 20, rangeY = 3;
     public GameObject bot;
     public int defaultSpawn = 10;
     public int defaultSpawnInfected = 5;
@@ -25,5 +25,10 @@ public class Puzzle1 : MonoBehaviour
             b.GetComponent<BotController>().puzzle1 = this;
             if (i >= defaultSpawn) b.GetComponent<BotController>().infected = true;
         }
+    }
+    public void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position, new Vector3(rangeX * 2, rangeY * 2, 0));
     }
 }
