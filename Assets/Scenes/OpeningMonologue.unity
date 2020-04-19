@@ -133,18 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a47f2747f48311349830870fb826e4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &160578443 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4204882428026635950, guid: 4c75fc769cbe208498af87c14c32542c,
-    type: 3}
-  m_PrefabInstance: {fileID: 4204882428170173733}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &857580168
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +426,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1768603278827390161, guid: 4c75fc769cbe208498af87c14c32542c,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 126926154}
+    - target: {fileID: 1768603278827390161, guid: 4c75fc769cbe208498af87c14c32542c,
+        type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
     - target: {fileID: 4204882428016461086, guid: 4c75fc769cbe208498af87c14c32542c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -553,6 +551,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 126926154}
+    - target: {fileID: 4204882428792750127, guid: 4c75fc769cbe208498af87c14c32542c,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c75fc769cbe208498af87c14c32542c, type: 3}
 --- !u!1001 &8650172592327982364
@@ -576,7 +579,17 @@ PrefabInstance:
         type: 3}
       propertyPath: continueButton
       value: 
-      objectReference: {fileID: 160578443}
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650172592337436758, guid: 614ff652dd7162d439943084f520dcb8,
+        type: 3}
+      propertyPath: isMonologue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8650172592337436758, guid: 614ff652dd7162d439943084f520dcb8,
+        type: 3}
+      propertyPath: sceneName
+      value: OutdoorScene
+      objectReference: {fileID: 0}
     - target: {fileID: 8650172592337436759, guid: 614ff652dd7162d439943084f520dcb8,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -10,6 +10,8 @@ public class BotController : MonoBehaviour
     float timeStop = 0;
     float timeSneeze = 0;
 
+    public bool neighbor = false;
+
     public bool pedestrian = false; //Cho  puzzle 1
     public Puzzle1 puzzle1;
     public bool infected = false;
@@ -40,7 +42,7 @@ public class BotController : MonoBehaviour
                 if(gameObject.GetComponent<EdgeCollider2D>().bounds.Contains(player.transform.position)) player.GetComponent<PlayerMovement>().infected = true;
             }
         }
-        if (pedestrian && timeStop < 0)
+        if ((pedestrian && timeStop < 0) || neighbor)
         {
             if(timeStop < -3) timeStop = Random.Range(8.0f, 16.0f);
             GameObject look=null;

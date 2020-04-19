@@ -9,14 +9,13 @@ public class TextController : MonoBehaviour
 {
     public Text currentText;
     public float textSpeed = 0.5f;
-    public Button continueButton;
     public bool isMonologue = false;
     public Canvas transitionCanvas;
     private Queue<string> sentences;
+    public string sceneName = "";
 
     void Start()
     {
-        continueButton.gameObject.SetActive(false);
         sentences = new Queue<string>();
     }
 
@@ -34,7 +33,6 @@ public class TextController : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        continueButton.gameObject.SetActive(false);
         if (sentences.Count == 0)
         {
             EndDialogue();
@@ -56,12 +54,14 @@ public class TextController : MonoBehaviour
             currentText.text += letter;
             yield return new WaitForSeconds(textSpeed);
         }
-        continueButton.gameObject.SetActive(true);
     }
 
     void EndDialogue()
     {
-        if (isMonologue) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (isMonologue)
+        {
+            if (sceneName.Length > 0) SceneManager.LoadScene(sceneName);
+        }
         else
         {
             transitionCanvas.gameObject.SetActive(false);
