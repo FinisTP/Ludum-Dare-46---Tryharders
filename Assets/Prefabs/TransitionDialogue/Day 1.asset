@@ -53,10 +53,16 @@ MonoBehaviour:
     - Anyway, my dad is doing fine, his wheel-bound condition may alleviate as time
       goes by...
     - So, how may I help you?|Ask for some food/3,Convince to leave family alone/4,Nothing/5
-    - I'm afraid you will have to ask other neighbors, I have developed trust issues
+    - 'I''m afraid you will have to ask other neighbors, I have developed trust issues
       since hearing coughing around my house.
-    - You need to say no more, I promise I will keep my own dignity.
-    - See you around... unless you are dead of course!
+
+      [6'
+    - 'You need to say no more, I promise I will keep my own dignity.
+
+      [6'
+    - 'See you around... unless you are dead of course!
+
+      [6'
   wifeSpeech:
     sentences:
     - Unless you have truly important business, I advise you stay home, let us prepare

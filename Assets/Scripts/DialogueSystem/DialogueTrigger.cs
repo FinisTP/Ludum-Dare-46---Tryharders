@@ -7,6 +7,7 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogue;
     public void TriggerDialogue()
     {
+        Debug.Log("Running neighbor dialogue.");
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
 
