@@ -21,6 +21,8 @@ public class DailyTransition : ScriptableObject
     public TextBehaviour neighbor1Speech;
     public TextBehaviour neighbor2Speech;
     public TextBehaviour wifeSpeech;
-    public TextBehaviour sonSpeech;
+    public TextBehaviour sonSpeech; 
     public TextBehaviour tvSpeech;
+    public TextBehaviour mailboxSpeech;
+    public TextBehaviour crowdSpeech;
 }

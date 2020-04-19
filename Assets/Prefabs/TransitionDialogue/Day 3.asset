@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d3ed087bfa308449c919f8f4d586d8, type: 3}
+  m_Name: Day 3
+  m_EditorClassIdentifier: 
+  dayNumber: 2
+  familyTransitionDay:
+    sentences:
+    - Let's stay home today. That creepy guy won't come and harm my family this way...
+  neighborhoodTransitionDay:
+    sentences:
+    - If I keep that guy alive, my family will be threatened till god knows when...
+      Maybe it is better if I slit his throat?
+  downtownTransitionDay:
+    sentences:
+    - A lot of people went out to downtown today, not for shopping obviously. Screams
+      can be heard from some crowds ready to resort into violence...
+  familyTransitionNight:
+    sentences:
+    - These scavengers were getting out of hand, they came in large group as well
+      , if maybe we left them to their own business, our lives might be preserved?
+  neighborhoodTransitionNight:
+    sentences:
+    - You have to take bigger risks this time, the neighbors are blocking the doors
+      shut. Time for your past trade in lockpicking and direct invasion.
+  downtownTransitionNight:
+    sentences: []
+  neighbor1Speech:
+    sentences:
+    - '* cough * the store runs out of tobacco, I have been trying my best for my
+      daughter also...'
+    - I saw a bunch of scavengers overrunning the house opposite of me. Honestly
+      I think I'm next...
+    - Maybe I should be aware of even you.
+  neighbor2Speech:
+    sentences:
+    - My dad went out since yesterday night... Actually, he wasn't found inside his
+      room.
+    - If by any chance you meet him, please bring him home, please...
+  wifeSpeech:
+    sentences:
+    - Unless you have truly important business, I advise you stay home, let us prepare
+      food and lock up the doors...
+    - I think some of our windows are broken by unknown reasons...
+    - I heard a lot of screams yesterday through the windows in my bedroom.
+    - Please stay home, we need you to fix a lot of things...
+    - 'Even I feel a bit sick these days... maybe it is just a light fever...
+
+'
+  sonSpeech:
+    sentences:
+    - Dad, I heard someone banging my bedroom window, please stay home with me tonight.
+    - The rats are invading my room, please chase them out papa.
+    - I want to go to school again, papa...
+    - Will we ever be able to go to the park again as you promised...?
+    - Mom seems very sick lately, what happened to our family papa...?
+  tvSpeech:
+    sentences:
+    - It seems the city is has become the ground of infestation, do not for any reasons,
+      go out to the urban areas, lest you risk being infected.
+    - The wind is blowing strongly today, in matter of hours, the whole city will
+      become the last place infected on Earth.
+    - Stay home now. I repeat. STAY HOME!
+  mailboxSpeech:
+    sentences:
+    - 'Orion''s letter: "Dear my regular customers...'
+    - Recently my stores have been hoarded by a lot of psycho running on the street.
+    - ' I''m afraid you will find the last of items today, I''ll be closing down
+      the store tomorrow, permanently..."'
+  crowdSpeech:
+    sentences:
+    - Step aside!
+    - Go near me and you will suffer...
+    - Please let me through!
+    - Excuse me !
+    - What the hell is with that attitude.
+    - Oh no I'm going to be late !
+    - I'm starting to feel insecure EVERYWHERE!
+    - I'm going mad !
+    - Scoo!
+    - Are you blind?
+    - '* COUGH *'
+    - '* COUGH  COUGH *'
+    - Ludum Dare 46... must... survive... for.... it
+    - Holy mother, Holy Shauntal! Give us hope!
+    - Obey Shautal mortal foolsl!
+    - This wasn't supposed to happen...
+    - Help, I can't... breathe....
+    - Calm down, look at me,... ugh...
+    - Get the f*ck off me, I don't trust no one!
+    - WE ARE DOOMED!
+    - My whole family was ravaged last night!
+    - But how? Who could've caused it?
+    - PLEASE CURE ME! I DON'T WANT TO DIE!!!
+    - Ehehehehehehehe !!!
+    - I need money for the hospital bill, give me your purse or else...!

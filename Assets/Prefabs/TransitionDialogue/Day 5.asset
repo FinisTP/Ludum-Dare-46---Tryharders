@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d3ed087bfa308449c919f8f4d586d8, type: 3}
+  m_Name: Day 5
+  m_EditorClassIdentifier: 
+  dayNumber: 4
+  familyTransitionDay:
+    sentences:
+    - No matter what happens, I want to die with my wife, my child, I'm sorry ...
+  neighborhoodTransitionDay:
+    sentences: []
+  downtownTransitionDay:
+    sentences:
+    - They won't let me go through, but I have to....
+  familyTransitionNight:
+    sentences: []
+  neighborhoodTransitionNight:
+    sentences: []
+  downtownTransitionNight:
+    sentences: []
+  neighbor1Speech:
+    sentences:
+    - ... What now? We are all dead tomorrow, let's celebrate, haha!
+  neighbor2Speech:
+    sentences:
+    - We need to escape... from life instead.. EHEHEHEHEHEHEHE !!!
+    - What's so funny? HA, to think we will all dead by daylight! I wonder why you
+      are still out here....
+  wifeSpeech:
+    sentences:
+    - '* cough coUGH COUgh CoUGh COUGH *'
+    - Castil is sick, but you don't have to go anywhere, we can't do anything more
+      now...
+    - I lost contact with all of my relatives, ugh...
+    - Where are you going...? We cannot withstand another day with you out...
+    - God help us please... *snivel*
+  sonSpeech:
+    sentences:
+    - Papa, I'm fine * cough *...
+    - What is going to happen papa, I see a lot of people laying around our house...
+    - I called Marlene today, she picked up didn't respond, but I heard a lot of
+      screams...
+    - Can I go out, I miss my friends papa...
+    - '* cough cough *'
+  tvSpeech:
+    sentences:
+    - '"Stop...I can''t... control... mysellf... stop broadcasting, GIVE ME THE PAINKILLE---"'
+  mailboxSpeech:
+    sentences:
+    - 'Irwin''s letter: "Listen! I have an important announcement, remember the project
+      I told you last year?  '
+    - My cure for the virus tested successfully on the lab subjects,
+    - Please come to the International Hospital and see it for yourself... before
+      it is too late..."
+  crowdSpeech:
+    sentences:
+    - Gather in large crowd, now !!
+    - Don't descend into madness!
+    - I cannot... control... myself...
+    - Are we going to die ...?
+    - This is worse than hell...
+    - GO AWAY!!
+    - Don't touch me !
+    - Step aside!
+    - Go near me and you will suffer...
+    - Please let me through!
+    - Excuse me !
+    - What the hell is with that attitude.
+    - Oh no I'm going to be late !
+    - I'm starting to feel insecure EVERYWHERE!
+    - I'm going mad !
+    - Are you blind?
+    - '* COUGH COUGH *'
+    - '* COUGH *'
+    - '* COUGH  COUGH COUGH COUGH COUGH*'
+    - Does anybody ever wonder why this ivirus has no name?

@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d3ed087bfa308449c919f8f4d586d8, type: 3}
+  m_Name: Day 4
+  m_EditorClassIdentifier: 
+  dayNumber: 3
+  familyTransitionDay:
+    sentences:
+    - The properties near us are almost wiped down by ravagers.. Our house doesn't
+      seem to far from those mess, the walls start to have cracks that may become
+      a direct source of virus infestation...
+  neighborhoodTransitionDay:
+    sentences: []
+  downtownTransitionDay:
+    sentences:
+    - This is preposterous... All of the pedestrians look like psychopaths. They
+      are coughing wildly and gathering in large crowds. Some of them downright murders
+      anything in their path. But it's too late to return now...
+  familyTransitionNight:
+    sentences:
+    - Is it me or did the sky turn agressively red? Regardless, we cannot sleep tonight,
+      our door is beyond repair and the shattered windows fill our floor with sharp,
+      deadly glasses...
+  neighborhoodTransitionNight:
+    sentences:
+    - You have to take bigger risks this time, to prove your prowess as a real ravager...
+      Time for your past trade in lockpicking and direct invasion.
+  downtownTransitionNight:
+    sentences: []
+  neighbor1Speech:
+    sentences:
+    - ... THOSE DAMN SULLY RAVAGERS !!!
+    - Poor my daughter Lola, she's killed by a ravager... and * cough cough * ...
+    - She laid dead on in front of me, AND THAT DAMN BASTARD ESCAPED !!!
+  neighbor2Speech:
+    sentences:
+    - Another person killed... bloody on my doormat... this is unreal.
+    - It's my dad, died of infection, before seeing me for the final time... I hope
+      this is just a bad dream.
+  wifeSpeech:
+    sentences:
+    - '* cough coUGH COUgh CoUGh COUGH *'
+    - Castil is sick, but you don't have to go anywhere, we can't do anything more
+      now...
+    - I lost contact with all of my relatives, ugh...
+    - Where are you going...? We cannot withstand another day with you out...
+    - God help us please... *snivel*
+  sonSpeech:
+    sentences:
+    - Papa, I'm fine * cough *...
+    - What is going to happen papa, I see a lot of people laying around our house...
+    - I called Marlene today, she picked up didn't respond, but I heard a lot of
+      screams...
+    - Can I go out, I miss my friends papa...
+    - '* cough cough *'
+  tvSpeech:
+    sentences:
+    - '"No matter how hard we tried to convince you... Believers of this so-called...'
+    - '''Shauntal'' is wreaking havoc over the whole city. Please keep out from any
+      corpses and board up your house.'
+    - Do not panic... though the last thing we will be worrying about is panicking..."
+  mailboxSpeech:
+    sentences: []
+  crowdSpeech:
+    sentences:
+    - Keep away from me! No!
+    - My eyes, it burns...!
+    - This city will soon be a pool of corpses...
+    - Blood...stench...everywhere!
+    - Hahahahahahahaha !!!
+    - Follow Shauntal mortal fools! Gather in crowded places instead of staying home.
+      You are blinded by those authority dogs!
+    - This virus don't affect if we stand in large groups! Promise you, that's why
+      our city has been so stable.
+    - '* HEAVY BREATHING *'
+    - God brings us happiness, but Shauntal brings us safety!!
+    - Protect yourself, there is no deity such as Shauntal!
+    - Stay home, please hear me out, or we will suffer the consequences.
+    - No... this Shauntal you spoke of... she is trying to kill us all !!!
+    - Marry... me... before I disap..pear...
+    - Stop polluting me with your absurd propaganda.
+    - I have to call the police, loud noise is happening everywhere around my house
+      !
+    - MY DAUGHTED IS DEAD! WHO KILLED HER!
+    - All of you will pay for this! I know you brought the virus into our lives!
+    - The sky is all red...
+    - I'm going to kill you if you step further.
+    - 999 METERS APART!
+    - HEY! HUG ME! IT IS GOING TO CURE YOU!

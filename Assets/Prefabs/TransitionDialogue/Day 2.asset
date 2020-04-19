@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d3ed087bfa308449c919f8f4d586d8, type: 3}
+  m_Name: Day 2
+  m_EditorClassIdentifier: 
+  dayNumber: 1
+  familyTransitionDay:
+    sentences:
+    - Each day, our boarded windows got broken again, mices began infesting, strangers
+      slid into our house and dug holes for safer place..And as if the outer threats
+      weren't enough, our child had had respiratory problems too...
+  neighborhoodTransitionDay:
+    sentences: []
+  downtownTransitionDay:
+    sentences:
+    - You went out to Downtown, the street is a bit more crowded, you can hear the
+      coughing as you drew near the crowds...
+  familyTransitionNight:
+    sentences:
+    - Several houses in the neighborhood has been robbed inside out lately, and unfortunately
+      it is happening to you today...
+  neighborhoodTransitionNight:
+    sentences:
+    - Tonight is darker than usual... As you tread your path carefully, one of the
+      neighbor's light is still on, but his door is quite loose...
+  downtownTransitionNight:
+    sentences:
+    - As you parked your near the address given. Athena came out to greet you with
+      a cheerful smile on her face. It seems you won't be leaving this love hotel
+      for quite a while...
+  neighbor1Speech:
+    sentences:
+    - Dang... these drugs sure shrug me off the fear of pandemic...
+    - Maybe that's why Lola keeps coughing... Anyway, maybe you wanna try some?
+  neighbor2Speech:
+    sentences:
+    - Jeez... A corpse laid on my front door last night, something weird must be
+      happening.
+    - Besides, have you heard loud screams around midnight? I thought it was coming
+      from yours...
+    - We should help each other... I don't know if I can stay safe with my dad anymore...
+  wifeSpeech:
+    sentences:
+    - Unless you have truly important business, I advise you stay home, let us prepare
+      food and lock up the doors...
+    - I think some of our windows are broken by unknown reasons...
+    - I heard a lot of screams yesterday through the windows in my bedroom.
+    - Please stay home, we need you to fix a lot of things...
+    - Even I feel a bit sick these days... maybe it is just a light fever...
+  sonSpeech:
+    sentences:
+    - Dad, I heard someone banging my bedroom window, please stay home with me tonight.
+    - The rats are invading my room, please chase them out papa.
+    - I want to go to school again, papa...
+    - Will we ever be able to go to the park again as you promised...?
+    - Mom seems very sick lately, what happened to our family papa...?
+  tvSpeech:
+    sentences:
+    - '"Over 95% of the world has been infected with the damn virus.  '
+    - The new symptoms for those who contracted the disease consist of gathering
+      and screaming in large crowd,
+    - approaching other people violently and invading properties. Please board up
+      the windows and keep your family safe."
+  mailboxSpeech:
+    sentences:
+    - 'Athena''s letter: "Ciao! How are you doing! We haven''t met since your early
+      retirement, are you doing well? '
+    - I guess your area is a bit dangerous now, come to this address, I want to talk
+      to you about something..."
+  crowdSpeech:
+    sentences:
+    - God brings us happiness, but Shauntal brings us safety!!
+    - Protect yourself, there is no deity such as Shauntal!
+    - Stay home, please hear me out, or we will suffer the consequences.
+    - Have you watched "Crash Landing on You?"
+    - We can still marry each other right?
+    - Stop polluting me with your absurd propaganda.
+    - I have to call the police, loud noise is happening everywhere around my house
+      !
+    - I heard a loud banging on the door yesterday.
+    - Though the government gave up, a small body in the International Hospital is
+      still working on the cure.
+    - Our city is safe from outsider, but the truth is, we never controlled who went
+      in and out.
+    - To be honest, the city's hospital is receiving massive checkups lately, I can't
+      fit in there...
+    - 2 METERS APART!
+    - Get the heck off me, why are you charging towards me!!!
+    - Watch it!
+    - Don't descend into madness!
+    - Hey you, be mindful of your step.
+    - People are going out more and more..
+    - Should I start going out more? I felt insecure even at home...
+    - GO AWAY!!
+    - Don't touch me !
