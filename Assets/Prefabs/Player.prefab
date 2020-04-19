@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a204c28122a950d47835b45797807a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 8
   infected: 0
 --- !u!95 &1140347224813902381
 Animator:
