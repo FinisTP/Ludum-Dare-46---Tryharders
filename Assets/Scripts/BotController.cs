@@ -19,7 +19,8 @@ public class BotController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
-        timeStop = Random.Range(3.0f, 8.0f); 
+        timeStop = Random.Range(3.0f, 8.0f);
+        speed = Random.Range(0.5f, 1.5f);
     }
     void setDirection()
     {
