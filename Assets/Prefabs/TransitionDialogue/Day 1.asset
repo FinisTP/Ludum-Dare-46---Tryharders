@@ -31,10 +31,16 @@ MonoBehaviour:
       want to stay home and watch for my sole daughter...\r"
   neighbor2Speech:
     sentences:
-    - 'Howdy! Is Irana doing fine? We haven''t talked for weeks, right now I just
-      want to stay home and watch for my sole daughter...
+    - "Howdy! Is Irana doing fine? We haven't talked for weeks, right now I just
+      want to stay home and watch for my sole daughter...|Ask for food\r/1,Convince
+      to leave family alone/2,Nothing/3\r\n\n"
+    - 'You have my sympathy, here is what my family has left for today...
 
-'
+      [4'
+    - "Oh my what are you saying, of course I won't do such \r\n[3"
+    - 'Goodbye
+
+      [4'
   wifeSpeech:
     sentences: []
   sonSpeech:

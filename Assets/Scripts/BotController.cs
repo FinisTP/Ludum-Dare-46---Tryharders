@@ -70,7 +70,7 @@ public class BotController : MonoBehaviour
                 target = puzzle1.transform.position + new Vector3(Random.Range(-puzzle1.rangeX, puzzle1.rangeX), Random.Range(-puzzle1.rangeY, puzzle1.rangeY), 0);
             }
         }
-        this.gameObject.transform.position += direction.normalized * Time.deltaTime *speed;
+        this.gameObject.transform.position += direction.normalized * Time.deltaTime * speed;
         gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(-transform.position.y * 10 + 100);
         
     }
