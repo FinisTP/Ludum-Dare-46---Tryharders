@@ -8,17 +8,33 @@ public class Navigator : MonoBehaviour
     public string message = "Press F to go home";
     public string navigateSceneName = "OutdoorScene";
     bool inside = false;
+    public bool bell = false;
+    public GameObject neighbor;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F) && inside)
         {
-            SceneManager.LoadScene(navigateSceneName);
+            if(!bell) SceneManager.LoadScene(navigateSceneName);
+            else
+            {
+                if (neighbor != null) StartCoroutine(ring());
+            }
         }
+    }
+    IEnumerator ring()
+    {
+        //play sound
+        if (GameObject.Find("PlayerHint").GetComponent<Text>().text == message) GameObject.Find("PlayerHint").GetComponent<Text>().text = "";
+
+        yield return new WaitForSeconds(1.5f);
+        GameObject n = Instantiate(neighbor);
+        n.transform.position = transform.position;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player")
         {
+            if (bell && neighbor == null) return;
             GameObject.Find("PlayerHint").GetComponent<Text>().text = message;
             inside = true;
         }
