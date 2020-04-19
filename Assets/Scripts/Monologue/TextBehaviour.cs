@@ -6,5 +6,5 @@ using UnityEngine;
 public class TextBehaviour
 {
     [TextArea(25, 25)]
-    public string[] sentences;
+    public List<string> sentences;
 }
