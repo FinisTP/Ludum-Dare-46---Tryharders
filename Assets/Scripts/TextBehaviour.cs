@@ -5,6 +5,6 @@ using UnityEngine;
 [System.Serializable]
 public class TextBehaviour
 {
-    [TextArea(4, 15)]
+    [TextArea(25, 25)]
     public string[] sentences;
 }
