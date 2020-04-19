@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -8151539979154875741}
   - component: {fileID: 8626919326426780110}
   - component: {fileID: 1210434803148860644}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Random Street Guy
   m_TagString: Entity
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 6204743611561601502}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1fa525f9fdca9564e90904b1953463eb, type: 2}
+  m_Controller: {fileID: 9100000, guid: e2b1674c9dbca2743a0762c2e1e8e998, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -121,6 +121,7 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   direction: {x: 0, y: 0, z: 0}
   speed: 1
+  neighbor: 0
   pedestrian: 0
   puzzle1: {fileID: 0}
   infected: 0
