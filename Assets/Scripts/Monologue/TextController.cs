@@ -10,6 +10,8 @@ public class TextController : MonoBehaviour
     public Text currentText;
     public float textSpeed = 0.5f;
     public Button continueButton;
+    public bool isMonologue = false;
+    public Canvas transitionCanvas;
     private Queue<string> sentences;
 
     void Start()
@@ -37,7 +39,7 @@ public class TextController : MonoBehaviour
         {
             EndDialogue();
             return;
-        } else if (sentences.Count == 1)
+        } else if (sentences.Count == 1 && isMonologue)
         {
             currentText.alignment = TextAnchor.MiddleCenter;
         }
@@ -59,6 +61,10 @@ public class TextController : MonoBehaviour
 
     void EndDialogue()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (isMonologue) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        else
+        {
+            transitionCanvas.gameObject.SetActive(false);
+        }
     }
 }
