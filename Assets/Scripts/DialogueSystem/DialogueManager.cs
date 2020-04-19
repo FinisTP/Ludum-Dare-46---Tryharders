@@ -11,6 +11,9 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     public bool continueButton;
 
+    public bool hasChoice;
+    public ChoiceSystem choiceSystem;
+    
     void Start()
     {
         sentences = new Queue<string>();
@@ -36,7 +39,7 @@ public class DialogueManager : MonoBehaviour
             return;
         }
         string sentence = sentences.Dequeue();
-        StartCoroutine(TypeSentence(sentence));       
+        StartCoroutine(TypeSentence(sentence));
     }
     
     IEnumerator TypeSentence(string sentence)
@@ -54,5 +57,9 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+        if (hasChoice)
+        {
+            choiceSystem.EnableChoices();
+        }
     }
 }
