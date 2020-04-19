@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 982182e0ece567c40822779167987497
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -9186371461854760162
+    second: second_house_0
+  - first:
+      213: -3562756337989262567
+    second: second_house_1
+  - first:
+      213: -507361993757026799
+    second: second_house_2
+  - first:
+      213: -4184707788374646297
+    second: second_house_3
+  - first:
+      213: 6291159824847106106
+    second: second_house_4
+  - first:
+      213: 6384403203689300353
+    second: second_house_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,7 +127,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: second_house_0
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 0
+        width: 536
+        height: 144
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e137c51b3d3738080800000000000000
+      internalID: -9186371461854760162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_house_1
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 144
+        width: 536
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913e0e4acfb8e8ec0800000000000000
+      internalID: -3562756337989262567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_house_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 208
+        width: 536
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116149d64fc75f8f0800000000000000
+      internalID: -507361993757026799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_house_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 336
+        width: 536
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e16e11207eece5c0800000000000000
+      internalID: -4184707788374646297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_house_4
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 432
+        width: 266
+        height: 340
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3078395780be4750800000000000000
+      internalID: 6291159824847106106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: second_house_5
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 580
+        width: 272
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18144c243e4f99850800000000000000
+      internalID: 6384403203689300353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
