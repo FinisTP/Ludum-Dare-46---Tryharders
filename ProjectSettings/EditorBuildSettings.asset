@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/IndoorScene.unity
     guid: 5e3845152b0de1247acd10dbf1581cd1
   - enabled: 1
+    path: Assets/Scenes/OpeningMonologue.unity
+    guid: 504cb8e410392f64b81d67eca395aac3
+  - enabled: 1
     path: Assets/Scenes/OutdoorScene.unity
     guid: df7623aa174f54f44b0428f5312df0ea
   - enabled: 1
