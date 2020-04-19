@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public Animator animator;
     private Queue<string> sentences;
+    public GameObject continueButton;
 
     void Start()
     {
@@ -34,11 +35,22 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence; 
+        StartCoroutine(TypeSentence(sentence));       
     }
-   
+    
+    IEnumerator TypeSentence(string sentence)
+    {
+        string textDisplay = "";
+        continueButton.SetActive(false);
+        foreach (char letter in sentence.ToCharArray())
+        {
+            textDisplay += letter;
+            dialogueText.text = textDisplay;
+            yield return new WaitForSeconds(0.02f);
+        }
+        continueButton.SetActive(true);
+    }
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
