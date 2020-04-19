@@ -1,0 +1,755 @@
+fileFormatVersion: 2
+guid: 98d324d10057eb04582477d39190a13c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -544351180036606133
+    second: housethiefprop_0
+  - first:
+      213: 6342308500891766098
+    second: housethiefprop_1
+  - first:
+      213: -2168450723457665277
+    second: housethiefprop_2
+  - first:
+      213: -5547832791273055594
+    second: housethiefprop_3
+  - first:
+      213: -3380777822205207121
+    second: housethiefprop_4
+  - first:
+      213: -3629828457567175875
+    second: housethiefprop_5
+  - first:
+      213: 6819137238139255770
+    second: housethiefprop_6
+  - first:
+      213: -2828095271900511309
+    second: housethiefprop_7
+  - first:
+      213: 1324272256812832063
+    second: housethiefprop_8
+  - first:
+      213: -422313789167398231
+    second: housethiefprop_9
+  - first:
+      213: -1458359335939664691
+    second: housethiefprop_10
+  - first:
+      213: 7158426303597970891
+    second: housethiefprop_11
+  - first:
+      213: -3689184754940186556
+    second: housethiefprop_12
+  - first:
+      213: 8524245303641348298
+    second: housethiefprop_13
+  - first:
+      213: -6866988105604204294
+    second: housethiefprop_14
+  - first:
+      213: -415624470275875545
+    second: housethiefprop_15
+  - first:
+      213: 64916487860905797
+    second: housethiefprop_16
+  - first:
+      213: 4788314929490622759
+    second: housethiefprop_17
+  - first:
+      213: -4521624446774753543
+    second: housethiefprop_18
+  - first:
+      213: 7709395414684505166
+    second: housethiefprop_19
+  - first:
+      213: 3292971788283070867
+    second: housethiefprop_20
+  - first:
+      213: 2070156074502824986
+    second: housethiefprop_21
+  - first:
+      213: -9085650054044327111
+    second: housethiefprop_22
+  - first:
+      213: 9107254556198121750
+    second: housethiefprop_23
+  - first:
+      213: 6572303584578606607
+    second: housethiefprop_24
+  - first:
+      213: -65491198490021076
+    second: housethiefprop_25
+  - first:
+      213: -854455208145158864
+    second: housethiefprop_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: housethiefprop_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127
+        width: 88
+        height: 107
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b477ad06c731278f0800000000000000
+      internalID: -544351180036606133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 175
+        width: 67
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d08938af7640850800000000000000
+      internalID: 6342308500891766098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 174
+        width: 33
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307fd535e8d18e1e0800000000000000
+      internalID: -2168450723457665277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 191
+        width: 39
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ad7e258732203b0800000000000000
+      internalID: -5547832791273055594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 192
+        width: 15
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad90fa9b701511d0800000000000000
+      internalID: -3380777822205207121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_5
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95
+        width: 39
+        height: 69
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3bba1fdf3240adc0800000000000000
+      internalID: -3629828457567175875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 127
+        width: 40
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbbde1503172ae50800000000000000
+      internalID: 6819137238139255770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 127
+        width: 39
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b38867855690c8d0800000000000000
+      internalID: -2828095271900511309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 127
+        width: 31
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35db3de992c06210800000000000000
+      internalID: 1324272256812832063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 159
+        width: 12
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a29de4a8d3a32af0800000000000000
+      internalID: -422313789167398231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_10
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 79
+        width: 64
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4117229edd2cbe0800000000000000
+      internalID: -1458359335939664691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 15
+        width: 38
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc505c0dbc6d75360800000000000000
+      internalID: 7158426303597970891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 63
+        width: 14
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440f003f2026dccc0800000000000000
+      internalID: -3689184754940186556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 79
+        width: 16
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.51}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac895d5b0f33c4670800000000000000
+      internalID: 8524245303641348298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_14
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 79
+        width: 16
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8f0a863be83b0a0800000000000000
+      internalID: -6866988105604204294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_15
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 79
+        width: 98
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d1f311fb76b3af0800000000000000
+      internalID: -415624470275875545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 5
+        width: 23
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729fcfc0f03837240800000000000000
+      internalID: 4788314929490622759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 15
+        width: 25
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6c442b586ff31c0800000000000000
+      internalID: -4521624446774753543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_19
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 47
+        width: 16
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e449b4598464dfa60800000000000000
+      internalID: 7709395414684505166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_20
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 31
+        width: 29
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399cefff46cf2bd20800000000000000
+      internalID: 3292971788283070867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_21
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 36
+        width: 25
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14ab5a4bfbaabc10800000000000000
+      internalID: 2070156074502824986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_22
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 15
+        width: 24
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933ed27e96949e180800000000000000
+      internalID: -9085650054044327111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_23
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 24
+        width: 27
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6113f3d34c7736e70800000000000000
+      internalID: 9107254556198121750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 10
+        width: 18
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0695d2e943853b50800000000000000
+      internalID: 6572303584578606607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_25
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 6
+        width: 21
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23761a1a14571ff0800000000000000
+      internalID: -65491198490021076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: housethiefprop_26
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 37
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d760ae38d5424f0800000000000000
+      internalID: -854455208145158864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
