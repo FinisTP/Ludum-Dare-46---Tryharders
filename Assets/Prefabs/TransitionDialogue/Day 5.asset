@@ -29,12 +29,35 @@ MonoBehaviour:
     sentences: []
   neighbor1Speech:
     sentences:
-    - ... What now? We are all dead tomorrow, let's celebrate, haha!
+    - ... What now? We are all dead tomorrow, let's celebrate, haha!|Ask for some
+      food/1,Convince to leave family alone/2,Nothing/3
+    - 'Having been robbed, and having my child murdered in front of my eyes... Please
+      say no more... * cough *
+
+      [4'
+    - 'Don''t mention it, the only thing I can do now is to prevent others from suffering
+      the same fate...
+
+      [4'
+    - 'AJAJAJAJAJA---
+
+      [4'
   neighbor2Speech:
     sentences:
     - We need to escape... from life instead.. EHEHEHEHEHEHEHE !!!
     - What's so funny? HA, to think we will all dead by daylight! I wonder why you
-      are still out here....
+      are still out here....|Ask for some food/2,Convince to leave family alone/3,Nothing/4
+    - 'Don''t mention it, the only thing I can do now is to prevent others from suffering
+      the same fate...
+
+      [5'
+    - 'Why are you asking me this...? Oh, you beg for mercy of SPREADING INFECTION
+      to my dad right? Get your arms ready...
+
+      [5'
+    - 'EHEHEHEHEHEHEHE !!!
+
+      [5'
   wifeSpeech:
     sentences:
     - '* cough coUGH COUgh CoUGh COUGH *'

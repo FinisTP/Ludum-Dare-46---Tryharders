@@ -7,6 +7,8 @@ public class DayManager : MonoBehaviour
     public DailyTransition[] list;
     public int day = 0;
 
+    public bool daytime = true;
+
     public DailyTransition getScript()
     {
         return list[day];
@@ -28,5 +30,31 @@ public class DayManager : MonoBehaviour
                 return day.tvSpeech.sentences;
         }
         return null;
+    }
+
+    public void NextDay()
+    {
+        if (day < 5)
+        {
+            day++;
+            ToggleDay();
+        }
+    }
+
+    public void ToggleDay()
+    {
+        if(day < 5)
+        {
+            day++;
+            daytime = true;
+        }
+    }
+    public void ToggleNight()
+    {
+        if (day < 5)
+        {
+            day++;
+            daytime = false;
+        }
     }
 }

@@ -13,9 +13,11 @@ public class DialogueManager : MonoBehaviour
     public bool continueButton;
     public int index = 0;
     string[] ans = null;
+    public List<GameObject> gameObjects;
     void Start()
     {
         sentences = new List<string>();
+        resetAnswer();
     }
     public void StartDialogue(Dialogue dialogue)
     {
@@ -32,17 +34,30 @@ public class DialogueManager : MonoBehaviour
     public void returnAnswer(int i)
     {
         if (ans == null) return;
+        
         index = int.Parse(ans[i].Split('/')[1]);
         resetAnswer();
-        StartCoroutine(TypeSentence(sentences[index].Split('[')[0]));
-        if (sentences[index].Contains("[")) index = int.Parse(sentences[index].Split('[')[1]);
         ans = null;
+        if (sentences[index].Contains("|"))
+        {
+            ans = sentences[index].Split('|')[1].Split(',');
+            for (int k = 0; k < ans.Length; k++)
+            {
+                GameObject answer = gameObjects[k];
+                answer.SetActive(true);
+                answer.transform.GetChild(0).GetComponent<Text>().text = ans[k].Split('/')[0].Split('[')[0];
+            }
+        }
+
+        StartCoroutine(TypeSentence(sentences[index].Split('[')[0]));
+        if (sentences[index].Contains("[")) index = int.Parse(sentences[index].Split('/')[0].Split('[')[1]);
+        
     }
     void resetAnswer()
     {
         for (int i = 0; i < 3; i++)
         {
-            GameObject answer = GameObject.Find("Answer" + (i + 1));
+            GameObject answer = gameObjects[i];
             answer.SetActive(false);
         }
     }
@@ -60,7 +75,7 @@ public class DialogueManager : MonoBehaviour
             ans = sentence.Split('|')[1].Split(',');
             for(int i = 0; i < ans.Length; i++)
             {
-                GameObject answer = GameObject.Find("Answer" + (i+1));
+                GameObject answer = gameObjects[i];
                 answer.SetActive(true);
                 answer.transform.GetChild(0).GetComponent<Text>().text = ans[i].Split('/')[0].Split('[')[0];
             }

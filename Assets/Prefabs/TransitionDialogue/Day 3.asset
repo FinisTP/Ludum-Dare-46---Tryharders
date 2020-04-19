@@ -40,12 +40,35 @@ MonoBehaviour:
       daughter also...'
     - I saw a bunch of scavengers overrunning the house opposite of me. Honestly
       I think I'm next...
-    - Maybe I should be aware of even you.
+    - Maybe I should be aware of even you.|Ask for some food/3,Convince to leave
+      family alone/4,Nothing/5
+    - 'That''s not polite of you to ask for food when you are better-off than three-fourth
+      of this world.
+
+      [6'
+    - 'Get off my sight. If you stay put, maybe I won''t harm a single strand of
+      hair.
+
+      [6'
+    - 'Stay strong.
+
+      [6'
   neighbor2Speech:
     sentences:
     - My dad went out since yesterday night... Actually, he wasn't found inside his
       room.
-    - If by any chance you meet him, please bring him home, please...
+    - If by any chance you meet him, please bring him home, please...|Ask for some
+      food/2,Convince to leave family alone/3,Nothing/4
+    - 'Of course! Hopefully this may be enough for your family, but not you unfortunately...
+
+      [5'
+    - 'I''m afraid you will have to ask other neighbors, I have developed trust issues
+      since hearing coughing around my house.
+
+      [5'
+    - 'If you or your family is coughing, I''d advise you to dig your own grave...
+
+      [5'
   wifeSpeech:
     sentences:
     - Unless you have truly important business, I advise you stay home, let us prepare

@@ -34,7 +34,7 @@ public class Navigator : MonoBehaviour
         n.transform.position = transform.position;
         neighbor = null;
         n.GetComponent<BotController>().neighbor = true;
-        gameObject.GetComponent<DialogueTrigger>().dialogue.sentence = GameObject.Find("Main").GetComponent<DayManager>().getS(type).ToArray();
+        gameObject.GetComponent<DialogueTrigger>().dialogue.sentence = GameObject.Find("Player").GetComponent<DayManager>().getS(type).ToArray();
         gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
     }
     private void OnTriggerEnter2D(Collider2D collision)

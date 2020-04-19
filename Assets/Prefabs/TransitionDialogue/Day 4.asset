@@ -40,12 +40,32 @@ MonoBehaviour:
     sentences:
     - ... THOSE DAMN SULLY RAVAGERS !!!
     - Poor my daughter Lola, she's killed by a ravager... and * cough cough * ...
-    - She laid dead on in front of me, AND THAT DAMN BASTARD ESCAPED !!!
+    - She laid dead on in front of me, AND THAT DAMN BASTARD ESCAPED !!!|Ask for
+      some food/3,Convince to leave family alone/4,Nothing/5
+    - 'Take this and scoot off...
+
+      [6'
+    - 'Hmph... I know where to exact my revenge on now...
+
+      [6'
+    - 'Let''s celebrate the end of the world, below dirt and soil...
+
+      [6'
   neighbor2Speech:
     sentences:
     - Another person killed... bloody on my doormat... this is unreal.
     - It's my dad, died of infection, before seeing me for the final time... I hope
-      this is just a bad dream.
+      this is just a bad dream.|Ask for some food/2,Convince to leave family alone/3,Nothing/4
+    - 'Forget it, I have problems keeping myself alive until tomorrow....
+
+      [5'
+    - 'My dad taught me right, I won''t let this catastrophe taint my dignity till
+      death...
+
+      [5'
+    - 'I''m going to reunite with my father soon, that''s all I''m quite sure of...
+
+      [5'
   wifeSpeech:
     sentences:
     - '* cough coUGH COUgh CoUGh COUGH *'
