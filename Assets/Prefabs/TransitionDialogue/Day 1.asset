@@ -16,10 +16,7 @@ MonoBehaviour:
   familyTransitionDay:
     sentences: []
   neighborhoodTransitionDay:
-    sentences:
-    - You can go around and meet with your neighbors, persuade them to not go into
-      your house at night or have their doors open so you can steal from them at
-      a higher success rate...
+    sentences: []
   downtownTransitionDay:
     sentences: []
   familyTransitionNight:
@@ -27,4 +24,20 @@ MonoBehaviour:
   neighborhoodTransitionNight:
     sentences: []
   downtownTransitionNight:
+    sentences: []
+  neighbor1Speech:
+    sentences:
+    - "Howdy! Is Irana doing fine? We haven't talked for weeks, right now I just
+      want to stay home and watch for my sole daughter...\r"
+  neighbor2Speech:
+    sentences:
+    - 'Howdy! Is Irana doing fine? We haven''t talked for weeks, right now I just
+      want to stay home and watch for my sole daughter...
+
+'
+  wifeSpeech:
+    sentences: []
+  sonSpeech:
+    sentences: []
+  tvSpeech:
     sentences: []

@@ -17,4 +17,10 @@ public class DailyTransition : ScriptableObject
     public TextBehaviour neighborhoodTransitionNight;
     public TextBehaviour downtownTransitionNight;
 
+    // Speech
+    public TextBehaviour neighbor1Speech;
+    public TextBehaviour neighbor2Speech;
+    public TextBehaviour wifeSpeech;
+    public TextBehaviour sonSpeech;
+    public TextBehaviour tvSpeech;
 }

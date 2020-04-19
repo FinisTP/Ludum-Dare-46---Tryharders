@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public Animator animator;
     private Queue<string> sentences;
-    public GameObject continueButton;
+    public bool continueButton;
 
     void Start()
     {
@@ -42,14 +42,14 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence(string sentence)
     {
         string textDisplay = "";
-        continueButton.SetActive(false);
+        continueButton = false;
         foreach (char letter in sentence.ToCharArray())
         {
             textDisplay += letter;
             dialogueText.text = textDisplay;
             yield return new WaitForSeconds(0.02f);
         }
-        continueButton.SetActive(true);
+        continueButton = true;
     }
     void EndDialogue()
     {
