@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TextTrigger : MonoBehaviour
 {
@@ -19,6 +20,19 @@ public class TextTrigger : MonoBehaviour
     }
     public void TriggerText()
     {
+        if (SceneManager.GetActiveScene().name == "DowntownScene") if (GameObject.Find("Player").GetComponent<DayManager>().day >= 4)
+        {
+            if (GameObject.Find("Player").GetComponent<DayManager>().gun)
+            {
+                GameObject.FindObjectOfType<TransitionStart>().dayStatus = DayStatus.downtownwgun;
+
+            }
+            else
+            {
+                GameObject.FindObjectOfType<TransitionStart>().dayStatus = DayStatus.downtownnogun;
+            }
+                GameObject.FindObjectOfType<TransitionStart>().reload();
+        }
         FindObjectOfType<TextController>().StartText(text);
     }
 }

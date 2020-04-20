@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1355,11 +1355,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Press F to go home
+  nightMessage: 
   navigateSceneName: OutdoorScene
   bell: 0
   interactTalk: 0
   nextday: 0
   money: 0
+  food: 0
   cooking: {fileID: 0}
   neighbor: {fileID: 0}
   typoCheck: {fileID: 1300283829}
@@ -3704,6 +3706,10 @@ MonoBehaviour:
   - 0.8
   castil: {fileID: 0}
   irana: {fileID: 0}
+  warnFood: 0
+  warnOutside: 0
+  warnInside: 0
+  warnMurder: 0
 --- !u!4 &1988406811
 Transform:
   m_ObjectHideFlags: 0

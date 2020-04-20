@@ -86,6 +86,21 @@ public class Navigator : MonoBehaviour
                     GameObject.Find("Player").GetComponent<DayManager>().NextDay();
                     GameObject.Find("Player").GetComponent<DayManager>().NextDay();
                 }
+                if(navigateSceneName == "DowntownScene")
+                {
+                    if (GameObject.Find("Player").GetComponent<DayManager>().day >= 4)
+                    {
+                        if (GameObject.Find("Player").GetComponent<DayManager>().gun)
+                        {
+                            GameObject.FindObjectOfType<TransitionStart>().dayStatus = DayStatus.downtownwgun;
+
+                        }
+                        else
+                        {
+                            GameObject.FindObjectOfType<TransitionStart>().dayStatus = DayStatus.downtownnogun;
+                        }
+                    }
+                }
                 SceneManager.LoadScene(navigateSceneName);
             }
             else

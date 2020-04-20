@@ -14,7 +14,9 @@ public enum DayStatus
     n2speech,
     wifespeech,
     sonspeech,
-    tvspeech
+    tvspeech,
+    downtownwgun,
+    downtownnogun
 }
 
 public class TransitionStart : MonoBehaviour
@@ -66,6 +68,14 @@ public class TransitionStart : MonoBehaviour
 
             case DayStatus.downtownNight:
                 foreach (string sentence in day.downtownTransitionNight.sentences)
+                    transitionText.text.sentences.Add(sentence);
+                break;
+            case DayStatus.downtownwgun:
+                foreach (string sentence in day.downtownWithGun.sentences)
+                    transitionText.text.sentences.Add(sentence);
+                break;
+            case DayStatus.downtownnogun:
+                foreach (string sentence in day.downtownWithoutGun.sentences)
                     transitionText.text.sentences.Add(sentence);
                 break;
         }

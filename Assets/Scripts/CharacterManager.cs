@@ -15,7 +15,6 @@ public class CharacterManager : MonoBehaviour
     public bool warnFood = false;
     public bool warnOutside = false;
     public bool warnInside = false;
-    public bool warnMurder = false;
 
     void Start()
     {
@@ -54,18 +53,16 @@ public class CharacterManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "IndoorScene")
         {
-            if ((!GameObject.Find("Player").GetComponent<DayManager>().wifeAlive || !GameObject.Find("Player").GetComponent<DayManager>().childAlive) && !warnInside)
+            if (!GameObject.Find("Player").GetComponent<DayManager>().wifeAlive || !GameObject.Find("Player").GetComponent<DayManager>().childAlive && !warnInside)
             {
-                
-                if (GameObject.Find("Player").GetComponent<DayManager>().day == 2 && !GameObject.Find("Player").GetComponent<DayManager>().daytime && GameObject.Find("Player").GetComponent<DayManager>().choose2 && !warnMurder)
+                warnInside = true;
+                if (GameObject.Find("Player").GetComponent<DayManager>().day == 2 && !GameObject.Find("Player").GetComponent<DayManager>().daytime && GameObject.Find("Player").GetComponent<DayManager>().choose2)
                 {
                     GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "Your wife and your child have been murdered.");
-                    warnMurder = true;
                 }
-                else if (!warnInside)
+                else
                 {
                     GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "Your wife and your child starved to death.");
-                    warnInside = true;
                 }
                 GameObject.Find("Castil").GetComponent<Animator>().runtimeAnimatorController = null;
                 GameObject.Find("Irana").GetComponent<Animator>().runtimeAnimatorController = null;
@@ -83,10 +80,7 @@ public class CharacterManager : MonoBehaviour
                 GameObject.Find("Player").GetComponent<DayManager>().childAlive = false;
                 GameObject.Find("Player").GetComponent<DayManager>().choose2 = true;
             }
-        }
-        if (GameObject.Find("Dickson(Clone)") != null && GameObject.Find("Player").GetComponent<DayManager>().dicksondie)
-        {
-            Destroy(GameObject.Find("Dickson(Clone)"));
+            
         }
     }
 

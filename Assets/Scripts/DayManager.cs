@@ -67,7 +67,11 @@ public class DayManager : MonoBehaviour
         }
         else
         {
-
+            GameObject.Find("Player").GetComponent<PlayerMovement>().infected = true;
+            infectedName.Add("Carla");
+            infectedName.Add("Irana");
+            infectedName.Add("Dickson");
+            infectedName.Add("Castil");
         }
         if (mask > 0) mask--;
     }
