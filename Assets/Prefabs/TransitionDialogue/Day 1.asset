@@ -23,8 +23,11 @@ MonoBehaviour:
     sentences:
     - 'You went out on the street, some people - or strange figures, move towards
       you in a distorted manner. '
-    - 'Others show strange postures beneath their mask. '
-    - You should try to avoid them...
+    - You should try to avoid them by not letting them step into your circle.
+    - The mart in the middle of the street contains various items which may be of
+      help to you.
+    - Go buy some foods, masks, or weapons to protect yourself...
+    - Make your way through 'em...
   familyTransitionNight:
     sentences:
     - Your family may be hungry, cook something up.
@@ -34,6 +37,10 @@ MonoBehaviour:
     - But be careful, calamity calls for extreme caution, they can exterminate you
       on sight...
   downtownTransitionNight:
+    sentences: []
+  downtownWithGun:
+    sentences: []
+  downtownWithoutGun:
     sentences: []
   neighbor1Speech:
     sentences:

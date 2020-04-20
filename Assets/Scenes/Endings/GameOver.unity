@@ -163,7 +163,7 @@ MonoBehaviour:
     sentences:
     - You and your family didn't get to live until the last day.
     - There is nothing more you can do and change.
-    - 'Ending 0: "Keep None Alive"'
+    - 'Ending 1: "Keep None Alive"'
 --- !u!114 &1366561129 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,

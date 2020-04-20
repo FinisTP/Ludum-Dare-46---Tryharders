@@ -161,11 +161,11 @@ MonoBehaviour:
   endingType: 1
   endingText:
     sentences:
-    - Congratulations! You have infected everyone!
-    - From now on, life on Earth will be nothing but shrinking...
-    - Slowly, and painfully...
-    - You didn't live soon enough to witness the collapse of the Earth.
-    - 'Ending 4: "Keep none alive"'
+    - You decided to stay home and protect your family until the end.
+    - Several of the infected barged right into your house.
+    - You had nothing to defend against them.
+    - With the last of your strength, you covered an exit way for your family.
+    - 'Ending 6: "Keep family alive"'
 --- !u!114 &1366561129 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,

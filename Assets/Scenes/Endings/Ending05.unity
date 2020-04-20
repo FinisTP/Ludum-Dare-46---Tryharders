@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -161,12 +161,11 @@ MonoBehaviour:
   endingType: 1
   endingText:
     sentences:
-    - You went into downtown in search of a cure for your family.
-    - Without anything to protect yourself, you are quickly overwhelmed by bloody
-      infected patients...
-    - Luckily, you fought with valiant to the cure, but did not return in time to
-      save your child and wife.
-    - 'Ending 06: "Keep none alive"'
+    - You decided to stay home and protect your family until the end.
+    - 'You fought strongly, but to no avail, you had to escape '
+    - Leaving your wife and child in the hands of the lunatics, they will soon be
+      infected and turned...
+    - 
 --- !u!114 &1366561129 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,
