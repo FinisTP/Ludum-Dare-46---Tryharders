@@ -29,7 +29,11 @@ public class PlayerMovement : MonoBehaviour
                 timeSneeze = 0;
                 anim.SetTrigger("punch");
                 GameObject[] list = GameObject.FindGameObjectsWithTag("Entity");
-                for (int i = 0; i < list.Length; i++) if (list[i] != gameObject && gameObject.GetComponent<EdgeCollider2D>().bounds.Contains(list[i].transform.position)) list[i].GetComponent<BotController>().infected = true;
+                for (int i = 0; i < list.Length; i++) if (list[i] != gameObject && gameObject.GetComponent<EdgeCollider2D>().bounds.Contains(list[i].transform.position))
+                    {
+                        list[i].GetComponent<BotController>().infected = true;
+                        if (!gameObject.GetComponent<DayManager>().infectedName.Contains(list[i].name))gameObject.GetComponent<DayManager>().infectedName.Add(list[i].name);
+                    }
             }
         }
     }

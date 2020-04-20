@@ -7,6 +7,18 @@ public class DayManager : MonoBehaviour
     public DailyTransition[] list;
     public int day = 0;
 
+    public int food = 0;
+    public bool gun = false;
+    public bool knife = false;
+    public int mask = 0; //2
+
+    public bool choose1 = false;
+    public bool choose2 = false;
+
+    public int money = 200;
+
+    public List<string> infectedName = new List<string>();
+
     public bool daytime = true;
 
     public DailyTransition getScript()
@@ -39,13 +51,13 @@ public class DayManager : MonoBehaviour
             day++;
             ToggleDay();
         }
+        if (mask > 0) mask--;
     }
 
     public void ToggleDay()
     {
         if(day < 5)
         {
-            day++;
             daytime = true;
         }
     }
@@ -53,7 +65,6 @@ public class DayManager : MonoBehaviour
     {
         if (day < 5)
         {
-            day++;
             daytime = false;
         }
     }

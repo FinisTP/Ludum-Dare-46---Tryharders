@@ -5,10 +5,9 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-    public void TriggerDialogue()
+    public void TriggerDialogue(bool random)
     {
-        Debug.Log("Running neighbor dialogue.");
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue,random);
     }
 
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,16 +18,17 @@ public class DialogueManager : MonoBehaviour
         sentences = new List<string>();
         resetAnswer();
     }
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue,bool random)
     {
         animator.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
         sentences.Clear();
-        foreach (string sentence in dialogue.sentence)
-        {
-            sentences.Add(sentence);
-        }
-
+        if (!random)
+            foreach (string sentence in dialogue.sentence)
+            {
+                sentences.Add(sentence);
+            }
+        else sentences.Add(dialogue.sentence[Random.Range(0, dialogue.sentence.Length)]);
         DisplayNextSentence();
     }
     public void returnAnswer(int i)
@@ -84,6 +84,11 @@ public class DialogueManager : MonoBehaviour
         {
             index = int.Parse(sentence.Split('[')[1]);
         }
+        if (sentence.Contains(":food:"))
+        {
+            sentence = sentence.Replace(":food:","");
+            GameObject.Find("Player").GetComponent<DayManager>().food++;
+        }
         else index++;
         StartCoroutine(TypeSentence(sentence.Split('|')[0].Split('[')[0]));
     }
@@ -102,6 +107,7 @@ public class DialogueManager : MonoBehaviour
     }
     void EndDialogue()
     {
+        if (!continueButton) return;
         animator.SetBool("IsOpen", false);
         index = 0;
         ans = null;

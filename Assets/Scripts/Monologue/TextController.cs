@@ -12,7 +12,7 @@ public class TextController : MonoBehaviour
     public bool isMonologue = false;
     public Canvas transitionCanvas;
     private Queue<string> sentences;
-    public string sceneName = "";
+    string sceneName = "OutdoorScene";
 
     void Start()
     {

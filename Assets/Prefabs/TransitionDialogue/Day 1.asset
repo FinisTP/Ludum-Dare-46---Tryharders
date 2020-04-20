@@ -42,11 +42,11 @@ MonoBehaviour:
       to leave family alone/3,Nothing/4
     - 'You have my sympathy, here is what my family has left for today...
 
-      [4'
+      [5'
     - 'Oh my what are you saying, of course I won''t do such things, we are neighbors!
 
-      [4'
-    - Goodbye then.
+      [5'
+    - Goodbye then.[5
   neighbor2Speech:
     sentences:
     - Oh lord! It is rare to have a guest visit me in this pandemic circumstance.

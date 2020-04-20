@@ -25,6 +25,7 @@ public class TransitionStart : MonoBehaviour
 
     void Start()
     {
+        day = GameObject.Find("Player").GetComponent<DayManager>().getScript();
         switch (dayStatus)
         {
             case DayStatus.familyDay:
