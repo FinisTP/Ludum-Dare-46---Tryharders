@@ -36,16 +36,20 @@ public class CharacterManager : MonoBehaviour
             if(GameObject.Find("Player").GetComponent<DayManager>().choose1 && GameObject.Find("Player").GetComponent<DayManager>().day == 3)
             {
                 GameObject.Find("Player").GetComponent<DayManager>().choose1 = false;
-                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You got suspected by a police and were forced into quarantine for 2 days.");
+                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You had so much fun with Athena... But she kept you f*cking on for two days straight...");
             }
         }
         else if (SceneManager.GetActiveScene().name == "IndoorScene")
         {
             if (!GameObject.Find("Player").GetComponent<DayManager>().wifeAlive || !GameObject.Find("Player").GetComponent<DayManager>().childAlive)
             {
-                if (GameObject.Find("Player").GetComponent<DayManager>().day == 2 && !GameObject.Find("Player").GetComponent<DayManager>().daytime)
+                if (GameObject.Find("Player").GetComponent<DayManager>().day == 2 && !GameObject.Find("Player").GetComponent<DayManager>().daytime && GameObject.Find("Player").GetComponent<DayManager>().choose2)
                 {
-                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "Your wife and your child have been murdered");
+                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "Your wife and your child have been murdered.");
+                }
+                else
+                {
+                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "Your wife and your child starved to death.");
                 }
                 GameObject.Find("Castil").GetComponent<Animator>().runtimeAnimatorController = null;
                 GameObject.Find("Irana").GetComponent<Animator>().runtimeAnimatorController = null;
@@ -61,6 +65,7 @@ public class CharacterManager : MonoBehaviour
             {
                 GameObject.Find("Player").GetComponent<DayManager>().wifeAlive = false;
                 GameObject.Find("Player").GetComponent<DayManager>().childAlive = false;
+                GameObject.Find("Player").GetComponent<DayManager>().choose2 = true;
             }
         }
     }
