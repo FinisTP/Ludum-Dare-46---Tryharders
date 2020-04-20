@@ -5,10 +5,10 @@ using UnityEngine;
 public enum DayStatus
 {
     familyDay,
-    neighborhoodDay,
-    downtownDay,
     familyNight,
+    neighborhoodDay,
     neighborhoodNight,
+    downtownDay,
     downtownNight,
     n1speech,
     n2speech,
@@ -25,12 +25,18 @@ public class TransitionStart : MonoBehaviour
 
     void Start()
     {
+        reload();
+    }
+
+    public void reload()
+    {
+        transitionText.text.sentences.Clear();
         day = GameObject.Find("Player").GetComponent<DayManager>().getScript();
         switch (dayStatus)
         {
             case DayStatus.familyDay:
                 foreach (string sentence in day.familyTransitionDay.sentences)
-                    transitionText.text.sentences.Add(sentence);      
+                    transitionText.text.sentences.Add(sentence);
                 break;
 
             case DayStatus.familyNight:
@@ -57,22 +63,6 @@ public class TransitionStart : MonoBehaviour
                 foreach (string sentence in day.downtownTransitionNight.sentences)
                     transitionText.text.sentences.Add(sentence);
                 break;
-            case DayStatus.n1speech:
-                transitionText.text.sentences =day.neighbor1Speech.sentences;
-                break;
-            case DayStatus.n2speech:
-                transitionText.text.sentences =day.neighbor2Speech.sentences;
-                break;
-            case DayStatus.wifespeech:
-                transitionText.text.sentences=day.wifeSpeech.sentences;
-                break;
-            case DayStatus.sonspeech:
-                transitionText.text.sentences=day.sonSpeech.sentences;
-                break;
-            case DayStatus.tvspeech:
-                transitionText.text.sentences=day.tvSpeech.sentences;
-                break;
         }
     }
-
 }

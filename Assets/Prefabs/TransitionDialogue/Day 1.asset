@@ -18,7 +18,10 @@ MonoBehaviour:
     - You stayed home and took care of yourself your family. do some chores so that
       their health declines at a lower rate.
   neighborhoodTransitionDay:
-    sentences: []
+    sentences:
+    - 'alo
+
+'
   downtownTransitionDay:
     sentences:
     - You went out on the street, some people - or strange figures, move towards

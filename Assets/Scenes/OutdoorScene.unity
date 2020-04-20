@@ -335,7 +335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &284936422
 Transform:
   m_ObjectHideFlags: 0
@@ -651,7 +651,7 @@ MonoBehaviour:
   bell: 1
   interactTalk: 0
   nextday: 0
-  neighbor: {fileID: 6204743611561601502, guid: 5d0cfe03b0b1d3c499a09bf4e0474984,
+  neighbor: {fileID: 9059835385619455363, guid: bdc74e5009a683e4d92b55f3e8956ba1,
     type: 3}
   source: {fileID: 488646647}
   type: 6
@@ -3966,6 +3966,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: c4d065be8cd37c74ab882bed5a87c284,
         type: 2}
+    - target: {fileID: 1785038883, guid: b6cc2bc2425782446b94abf87b6ed064, type: 3}
+      propertyPath: dayStatus
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 9046161580126305324, guid: b6cc2bc2425782446b94abf87b6ed064,
         type: 3}
       propertyPath: currentText

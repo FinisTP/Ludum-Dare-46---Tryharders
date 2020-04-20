@@ -23,8 +23,11 @@ public class Navigator : MonoBehaviour
         {
             if (nextday)
             {
-                if(!GameObject.Find("Player").GetComponent<DayManager>().daytime) GameObject.Find("Player").GetComponent<DayManager>().NextDay();
-                SceneManager.LoadScene("Day"+(GameObject.Find("Player").GetComponent<DayManager>().day+1)+"Monologue");
+                if (!GameObject.Find("Player").GetComponent<DayManager>().daytime)
+                {
+                    GameObject.Find("Player").GetComponent<DayManager>().NextDay();
+                    SceneManager.LoadScene("Day" + (GameObject.Find("Player").GetComponent<DayManager>().day + 1) + "Monologue");
+                }
             }
             else if (interactTalk)
             {

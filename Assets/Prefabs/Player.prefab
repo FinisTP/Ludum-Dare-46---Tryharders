@@ -419,6 +419,8 @@ MonoBehaviour:
   gun: 0
   knife: 0
   mask: 0
+  choose1: 0
+  choose2: 0
   money: 200
   infectedName: []
   daytime: 1

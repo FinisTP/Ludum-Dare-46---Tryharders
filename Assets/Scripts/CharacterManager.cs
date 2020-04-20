@@ -20,6 +20,11 @@ public class CharacterManager : MonoBehaviour
         GameObject player = GameObject.Find("Player");
         player.transform.position = transform.position;
         reupdateScene(player);
+        if (!player.GetComponent<DayManager>().daytime)
+        {
+            GameObject.FindObjectOfType<TransitionStart>().dayStatus++;
+            GameObject.FindObjectOfType<TransitionStart>().reload();
+        }
     }
 
     public void reupdateScene(GameObject player)
@@ -40,5 +45,6 @@ public class CharacterManager : MonoBehaviour
                 else light.transform.GetChild(i).GetComponent<Light2D>().intensity = lightNight[i];
             }
         }
+
     }
 }
