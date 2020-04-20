@@ -8,6 +8,7 @@ public class DayManager : MonoBehaviour
     public int day = 0;
 
     public int food = 0;
+    public int actualFood = 0;
     public bool gun = false;
     public bool knife = false;
     public int mask = 0; //2

@@ -92,7 +92,13 @@ public class DialogueManager : MonoBehaviour
         else index++;
         StartCoroutine(TypeSentence(sentence.Split('|')[0].Split('[')[0]));
     }
-    
+    public void sendMessage(string author,string message)
+    {
+        animator.SetBool("IsOpen", true);
+        nameText.text = author;
+        sentences.Clear();
+        StartCoroutine(TypeSentence(message));
+    }
     IEnumerator TypeSentence(string sentence)
     {
         string textDisplay = "";

@@ -11,6 +11,7 @@ public class Navigator : MonoBehaviour
     public bool bell = false;
     public bool interactTalk = false;
     public bool nextday = false;
+    public GameObject cooking;
     public GameObject neighbor;
 
     public AudioSource source;
@@ -21,7 +22,18 @@ public class Navigator : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && inside)
         {
-            if (nextday)
+            if (cooking != null)
+            {
+                if (GameObject.Find("Player").GetComponent<DayManager>().food > 0)
+                {
+                    cooking.SetActive(true);
+                    GameObject.Find("Player").GetComponent<DayManager>().food--;
+                }
+                else
+                {
+                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You dont have any food to cook");
+                }
+            }else if (nextday)
             {
                 if (!GameObject.Find("Player").GetComponent<DayManager>().daytime)
                 {
