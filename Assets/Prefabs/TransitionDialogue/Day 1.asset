@@ -37,16 +37,44 @@ MonoBehaviour:
     sentences: []
   neighbor1Speech:
     sentences:
+<<<<<<< Updated upstream
     - "Howdy! Is Irana doing fine? We haven't talked for weeks, right now I just
       want to stay home and watch for my sole daughter...\r"
     - Oh! Pardon me, looks like you need something, even though I'm not sure who
       needs help better...
+=======
+    - Howdy! Is Irana doing fine? We haven't talked for weeks, right now I just want
+      to stay home and watch for my sole daughter...
+    - Oh! Pardon me, looks like you need something.|Give me some food/2,Don't hurt
+      my family/3,Nothing/4
+    - 'You have my sympathy, here is what my family has left for today...
+
+      [4'
+    - 'Oh my what are you saying, of course I won''t do such things, we are neighbors!
+
+      [4'
+    - Goodbye then.
+>>>>>>> Stashed changes
   neighbor2Speech:
     sentences:
     - Oh lord! It is rare to have a guest visit me in this pandemic circumstance.
     - Anyway, my dad is doing fine, his wheel-bound condition may alleviate as time
       goes by...
+<<<<<<< Updated upstream
     - So, how may I help you?
+=======
+    - So, how may I help you?|Give me some food/3,Don't hurt my family/4,Nothing/5
+    - 'I''m afraid you will have to ask other neighbors, I have developed trust issues
+      since hearing coughing around my house.
+
+      [6'
+    - 'You need to say no more, I promise I will keep my own dignity.
+
+      [6'
+    - 'See you around... unless you are dead of course!
+
+      [6'
+>>>>>>> Stashed changes
   wifeSpeech:
     sentences:
     - Unless you have truly important business, I advise you stay home, let us prepare

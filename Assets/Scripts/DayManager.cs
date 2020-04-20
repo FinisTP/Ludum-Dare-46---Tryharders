@@ -26,7 +26,38 @@ public class DayManager : MonoBehaviour
                 return day.sonSpeech.sentences;
             case DayStatus.tvspeech:
                 return day.tvSpeech.sentences;
+            case DayStatus.mailspeech:
+                return day.mailboxSpeech.sentences;
+            case DayStatus.crowdspeech:
+                return day.crowdSpeech.sentences;
         }
         return null;
     }
+<<<<<<< Updated upstream
+=======
+
+    public void NextDay()
+    {
+        if (day < 5)
+        {
+            day++;
+            ToggleDay();
+        }
+    }
+
+    public void ToggleDay()
+    {
+        if(day < 5)
+        {
+            daytime = true;
+        }
+    }
+    public void ToggleNight()
+    {
+        if (day < 5)
+        {
+            daytime = false;
+        }
+    }
+>>>>>>> Stashed changes
 }

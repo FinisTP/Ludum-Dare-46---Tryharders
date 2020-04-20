@@ -40,14 +40,44 @@ MonoBehaviour:
   neighbor1Speech:
     sentences:
     - Dang... these drugs sure shrug me off the fear of pandemic...
+<<<<<<< Updated upstream
     - Maybe that's why Lola keeps coughing... Anyway, maybe you wanna try some?
+=======
+    - Maybe that's why Lola keeps coughing... Anyway, maybe you wanna try some?|Give
+      me some food/2,Don't hurt my family/3,Nothing/4
+    - 'That''s not polite of you to ask for food when you are better-off than three-fourth
+      of this world.
+
+      [5'
+    - 'Oh my what are you saying, of course I won''t do such things, we are neighbors!
+
+      [5'
+    - 'Be safe
+
+      [5'
+>>>>>>> Stashed changes
   neighbor2Speech:
     sentences:
     - Jeez... A corpse laid on my front door last night, something weird must be
       happening.
     - Besides, have you heard loud screams around midnight? I thought it was coming
       from yours...
+<<<<<<< Updated upstream
     - We should help each other... I don't know if I can stay safe with my dad anymore...
+=======
+    - We should help each other... I don't know if I can stay safe with my dad anymore...|Give
+      me some food/3,Don't hurt my family/4,Nothing/5
+    - 'Of course! Hopefully this may be enough for your family, but not you unfortunately...
+
+      [6'
+    - 'I''m afraid you will have to ask other neighbors, I have developed trust issues
+      since hearing coughing around my house.
+
+      [6'
+    - 'Lock your doors. Don''t go to the downtown unless you truly detest lives.
+
+      [6'
+>>>>>>> Stashed changes
   wifeSpeech:
     sentences:
     - Unless you have truly important business, I advise you stay home, let us prepare

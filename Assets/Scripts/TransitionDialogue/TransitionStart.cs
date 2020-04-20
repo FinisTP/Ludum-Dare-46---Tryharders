@@ -14,7 +14,9 @@ public enum DayStatus
     n2speech,
     wifespeech,
     sonspeech,
-    tvspeech
+    tvspeech,
+    mailspeech,
+    crowdspeech
 }
 
 public class TransitionStart : MonoBehaviour
@@ -25,6 +27,7 @@ public class TransitionStart : MonoBehaviour
 
     void Start()
     {
+        day = GameObject.Find("Player").GetComponent<DayManager>().getScript();
         switch (dayStatus)
         {
             case DayStatus.familyDay:
@@ -55,21 +58,6 @@ public class TransitionStart : MonoBehaviour
             case DayStatus.downtownNight:
                 foreach (string sentence in day.downtownTransitionNight.sentences)
                     transitionText.text.sentences.Add(sentence);
-                break;
-            case DayStatus.n1speech:
-                transitionText.text.sentences =day.neighbor1Speech.sentences;
-                break;
-            case DayStatus.n2speech:
-                transitionText.text.sentences =day.neighbor2Speech.sentences;
-                break;
-            case DayStatus.wifespeech:
-                transitionText.text.sentences=day.wifeSpeech.sentences;
-                break;
-            case DayStatus.sonspeech:
-                transitionText.text.sentences=day.sonSpeech.sentences;
-                break;
-            case DayStatus.tvspeech:
-                transitionText.text.sentences=day.tvSpeech.sentences;
                 break;
         }
     }

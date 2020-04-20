@@ -40,12 +40,40 @@ MonoBehaviour:
     sentences:
     - ... THOSE DAMN SULLY RAVAGERS !!!
     - Poor my daughter Lola, she's killed by a ravager... and * cough cough * ...
+<<<<<<< Updated upstream
     - She laid dead on in front of me, AND THAT DAMN BASTARD ESCAPED !!!
+=======
+    - She laid dead on in front of me, AND THAT DAMN BASTARD ESCAPED !!!|Give me
+      some food/3,Don't hurt my family/4,Nothing/5
+    - 'Take this and scoot off...
+
+      [6'
+    - 'Hmph... I know where to exact my revenge on now...
+
+      [6'
+    - 'Let''s celebrate the end of the world, below dirt and soil...
+
+      [6'
+>>>>>>> Stashed changes
   neighbor2Speech:
     sentences:
     - Another person killed... bloody on my doormat... this is unreal.
     - It's my dad, died of infection, before seeing me for the final time... I hope
+<<<<<<< Updated upstream
       this is just a bad dream.
+=======
+      this is just a bad dream.|Give me some food/2,Don't hurt my family/3,Nothing/4
+    - 'Forget it, I have problems keeping myself alive until tomorrow....
+
+      [5'
+    - 'My dad taught me right, I won''t let this catastrophe taint my dignity till
+      death...
+
+      [5'
+    - 'I''m going to reunite with my father soon, that''s all I''m quite sure of...
+
+      [5'
+>>>>>>> Stashed changes
   wifeSpeech:
     sentences:
     - '* cough coUGH COUgh CoUGh COUGH *'
