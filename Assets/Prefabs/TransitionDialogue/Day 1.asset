@@ -18,10 +18,7 @@ MonoBehaviour:
     - You stayed home and took care of yourself your family. do some chores so that
       their health declines at a lower rate.
   neighborhoodTransitionDay:
-    sentences:
-    - 'alo
-
-'
+    sentences: []
   downtownTransitionDay:
     sentences:
     - You went out on the street, some people - or strange figures, move towards
@@ -43,7 +40,7 @@ MonoBehaviour:
       to stay home and watch for my sole daughter...
     - Oh! Pardon me, looks like you need something.|Ask for some food/2,Convince
       to leave family alone/3,Nothing/4
-    - 'You have my sympathy, here is what my family has left for today...
+    - ':food:You have my sympathy, here is what my family has left for today...
 
       [5'
     - 'Oh my what are you saying, of course I won''t do such things, we are neighbors!
