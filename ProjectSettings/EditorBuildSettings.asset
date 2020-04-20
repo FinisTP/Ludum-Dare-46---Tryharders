@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/IndoorScene.unity
     guid: 5e3845152b0de1247acd10dbf1581cd1
   - enabled: 1
-    path: Assets/Scenes/OpeningMonologue.unity
+    path: Assets/Scenes/Monologues/OpeningMonologue.unity
     guid: 504cb8e410392f64b81d67eca395aac3
   - enabled: 1
     path: Assets/Scenes/OutdoorScene.unity
@@ -24,15 +24,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Day2Monologue.unity
+    path: Assets/Scenes/Monologues/Day2Monologue.unity
     guid: ff93bcc3cde132d489d76705e701cb7f
   - enabled: 1
-    path: Assets/Scenes/Day3Monologue.unity
+    path: Assets/Scenes/Monologues/Day3Monologue.unity
     guid: cabd6c4f59fe32e438c5a64063d0a0c7
   - enabled: 1
-    path: Assets/Scenes/Day4Monologue.unity
+    path: Assets/Scenes/Monologues/Day4Monologue.unity
     guid: 479ce5048a235444ea22e207848509bb
   - enabled: 1
-    path: Assets/Scenes/Day5Monologue.unity
+    path: Assets/Scenes/Monologues/Day5Monologue.unity
     guid: 4249c670aaa3d174ea2ee36fa282fe96
   m_configObjects: {}

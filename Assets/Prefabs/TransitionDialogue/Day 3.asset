@@ -15,23 +15,24 @@ MonoBehaviour:
   dayNumber: 2
   familyTransitionDay:
     sentences:
-    - Let's stay home today. That creepy guy won't come and harm my family this way...
+    - 'Let''s stay home today. '
+    - That creepy guy won't come and harm my family this way...
   neighborhoodTransitionDay:
-    sentences:
-    - If I keep that guy alive, my family will be threatened till god knows when...
-      Maybe it is better if I slit his throat?
+    sentences: []
   downtownTransitionDay:
     sentences:
-    - A lot of people went out to downtown today, not for shopping obviously. Screams
-      can be heard from some crowds ready to resort into violence...
+    - A lot of people went out to downtown today,
+    - 'not for shopping obviously. '
+    - Screams can be heard from some crowds ready to resort into violence...
   familyTransitionNight:
     sentences:
-    - These scavengers were getting out of hand, they came in large group as well
-      , if maybe we left them to their own business, our lives might be preserved?
+    - These scavengers were getting out of hand, they came in large group as well...
+    - If maybe we left them to their own business, our lives might be preserved?
   neighborhoodTransitionNight:
     sentences:
-    - You have to take bigger risks this time, the neighbors are blocking the doors
-      shut. Time for your past trade in lockpicking and direct invasion.
+    - 'You have to take bigger risks this time, the neighbors are blocking the doors
+      shut. '
+    - Time for your past trade in lockpicking and direct invasion.
   downtownTransitionNight:
     sentences: []
   neighbor1Speech:

@@ -15,23 +15,26 @@ MonoBehaviour:
   dayNumber: 0
   familyTransitionDay:
     sentences:
-    - You stayed home and took care of yourself your family. do some chores so that
-      their health declines at a lower rate.
+    - 'You stayed home and took care of yourself your family. '
+    - Do some chores so that their health declines at a lower rate.
   neighborhoodTransitionDay:
     sentences: []
   downtownTransitionDay:
     sentences:
-    - You went out on the street, some people - or strange figures, move towards
-      you in a distorted manner. Others show strange postures beneath their mask.
-      You should try to avoid them...
+    - 'You went out on the street, some people - or strange figures, move towards
+      you in a distorted manner. '
+    - 'Others show strange postures beneath their mask. '
+    - You should try to avoid them...
   familyTransitionNight:
     sentences:
-    - You went out to the neighborhood at night and prepared to steal some goods.
+    - 'In such a harsh era, the unemployed turns into banditry. '
+    - 'They ravage the houses and bring everything they can back home. '
+    - But the worst situation is if they themselves carry disease to your family...
+    - ' Kill them.'
   neighborhoodTransitionNight:
     sentences:
-    - In such a harsh era, the unemployed turns into banditry. they ravage the houses
-      and bring everything they can back home. But the worst situation is if they
-      themselves carry disease to your family... Kill them.
+    - At an instant, you caught glimpse of a neighbor's door opening loosely.
+    - A sweet chance for some money, don't you think?
   downtownTransitionNight:
     sentences: []
   neighbor1Speech:

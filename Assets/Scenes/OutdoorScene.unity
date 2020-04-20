@@ -822,6 +822,7 @@ MonoBehaviour:
   bell: 1
   interactTalk: 0
   nextday: 0
+  cooking: {fileID: 0}
   neighbor: {fileID: 9059835385619455363, guid: bdc74e5009a683e4d92b55f3e8956ba1,
     type: 3}
   source: {fileID: 488646647}
@@ -2000,6 +2001,7 @@ MonoBehaviour:
   bell: 0
   interactTalk: 0
   nextday: 0
+  cooking: {fileID: 0}
   neighbor: {fileID: 0}
   source: {fileID: 0}
   type: 0
@@ -4008,6 +4010,7 @@ MonoBehaviour:
   bell: 0
   interactTalk: 0
   nextday: 0
+  cooking: {fileID: 0}
   neighbor: {fileID: 0}
   source: {fileID: 0}
   type: 0
@@ -4390,6 +4393,7 @@ MonoBehaviour:
   bell: 1
   interactTalk: 0
   nextday: 0
+  cooking: {fileID: 0}
   neighbor: {fileID: 8787239088682498846, guid: bdf2ded9f46bf484796d3027fedbdbb2,
     type: 3}
   source: {fileID: 1953764882}
@@ -4711,6 +4715,11 @@ PrefabInstance:
       propertyPath: transitionCanvas
       value: 
       objectReference: {fileID: 519168851}
+    - target: {fileID: 9046161580126305324, guid: b6cc2bc2425782446b94abf87b6ed064,
+        type: 3}
+      propertyPath: isMonologue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9046161580126305325, guid: b6cc2bc2425782446b94abf87b6ed064,
         type: 3}
       propertyPath: m_LocalPosition.x

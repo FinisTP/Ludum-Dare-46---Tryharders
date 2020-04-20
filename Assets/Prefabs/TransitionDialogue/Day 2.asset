@@ -15,23 +15,26 @@ MonoBehaviour:
   dayNumber: 1
   familyTransitionDay:
     sentences:
-    - Each day, our boarded windows got broken again, mices began infesting, strangers
-      slid into our house and dug holes for safer place..And as if the outer threats
-      weren't enough, our child had had respiratory problems too...
+    - 'Each day, our boarded windows got broken again, '
+    - mices began infesting, strangers slid into our house and dug holes for safer
+      place...
+    - And as if the outer threats weren't enough, our child had had respiratory problems
+      too..
   neighborhoodTransitionDay:
     sentences: []
   downtownTransitionDay:
     sentences:
-    - You went out to Downtown, the street is a bit more crowded, you can hear the
-      coughing as you drew near the crowds...
+    - 'You went out to Downtown, the street is a bit more crowded, '
+    - you can hear the coughing as you drew near the crowds...
   familyTransitionNight:
     sentences:
-    - Several houses in the neighborhood has been robbed inside out lately, and unfortunately
-      it is happening to you today...
+    - 'Several houses in the neighborhood has been robbed inside out lately, '
+    - and unfortunately it is happening to you today...
   neighborhoodTransitionNight:
     sentences:
-    - Tonight is darker than usual... As you tread your path carefully, one of the
-      neighbor's light is still on, but his door is quite loose...
+    - 'Tonight is darker than usual...  '
+    - As you tread your path carefully, one of the neighbor's light is still on,
+    - but his door is quite loose...
   downtownTransitionNight:
     sentences:
     - As you parked your near the address given. Athena came out to greet you with

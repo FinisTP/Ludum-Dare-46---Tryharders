@@ -133,6 +133,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a47f2747f48311349830870fb826e4ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &530009205
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1276555158140020021, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_Name
+      value: Main Camera (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276555158140020022, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276555158140020022, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276555158140020022, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276555158140020022, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276555158140020022, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276555158140020022, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276555158140020022, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276555158140020022, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276555158140020022, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276555158140020022, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276555158140020022, guid: 5635981fa7256e247bdf3f7b6fdc6d87,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5635981fa7256e247bdf3f7b6fdc6d87, type: 3}
 --- !u!1001 &861917465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -425,21 +494,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,
         type: 3}
+      propertyPath: text.sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,
+        type: 3}
       propertyPath: text.sentences.Array.data[0]
-      value: What on Earth happened here! This town is almost completely infected..
-        Survivors, lock your door, check your own family members for symptoms of
-        the viruses. Do not under any circumstance get into the crowd !!!
+      value: 'What on Earth happened here! This town is almost completely infected.. '
       objectReference: {fileID: 0}
     - target: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,
         type: 3}
       propertyPath: text.sentences.Array.data[1]
-      value: Recall Orion's letter from yesterday, it seems the shop is closed, but
-        the hospital is still open with more medical supplies, maybe you can make
-        a trip down there...
+      value: Survivors are seemingly wiped out one by one, coughing and screaming
+        wildly...
       objectReference: {fileID: 0}
     - target: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,
         type: 3}
       propertyPath: text.sentences.Array.data[2]
+      value: Until it all formed a bathhouse of corpse.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,
+        type: 3}
+      propertyPath: text.sentences.Array.data[3]
+      value: Recall Orion's letter from yesterday, it seems the shop is closed...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,
+        type: 3}
+      propertyPath: text.sentences.Array.data[4]
+      value: You can still drive to the downtown, but it is of no use right now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,
+        type: 3}
+      propertyPath: text.sentences.Array.data[5]
       value: '"Keep it alive, you have 2 days."'
       objectReference: {fileID: 0}
     m_RemovedComponents: []

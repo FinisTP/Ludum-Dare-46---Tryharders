@@ -15,25 +15,26 @@ MonoBehaviour:
   dayNumber: 3
   familyTransitionDay:
     sentences:
-    - The properties near us are almost wiped down by ravagers.. Our house doesn't
-      seem to far from those mess, the walls start to have cracks that may become
-      a direct source of virus infestation...
+    - 'The properties near us are almost wiped down by ravagers.. '
+    - Our house doesn't seem to far from those mess.
+    - The walls start to have cracks that may become a direct source of virus infestation...
   neighborhoodTransitionDay:
     sentences: []
   downtownTransitionDay:
     sentences:
-    - This is preposterous... All of the pedestrians look like psychopaths. They
-      are coughing wildly and gathering in large crowds. Some of them downright murders
-      anything in their path. But it's too late to return now...
+    - 'This is preposterous... All of the pedestrians look like psychopaths. '
+    - 'They are coughing wildly and gathering in large crowds. '
+    - 'Some of them downright murders anything in their path. '
+    - But it's too late to return now...
   familyTransitionNight:
     sentences:
-    - Is it me or did the sky turn agressively red? Regardless, we cannot sleep tonight,
-      our door is beyond repair and the shattered windows fill our floor with sharp,
-      deadly glasses...
+    - 'Is it me or did the sky turn agressively red? '
+    - 'Regardless, we cannot sleep tonight, our door is beyond repair '
+    - and the shattered windows fill our floor with sharp, deadly glasses...
   neighborhoodTransitionNight:
     sentences:
     - You have to take bigger risks this time, to prove your prowess as a real ravager...
-      Time for your past trade in lockpicking and direct invasion.
+    - Time for your past trade in lockpicking and direct invasion.
   downtownTransitionNight:
     sentences: []
   neighbor1Speech:

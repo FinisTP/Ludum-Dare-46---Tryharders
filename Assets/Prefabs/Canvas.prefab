@@ -293,11 +293,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-    sentences:
-    - 20XX, 10 years after the worst incident in human history, viruses outbreak
-      covered over 90% of the world. Humanity continues to lay in wait for someone
-      to undo their own mistakes...
-    - You are a retired sheriff of two children and a wife, your family stayed strong
-      amidst the pandemic, until one person began coughing loudly somewhere in the
-      neighborhood...
-    - '"Keep it alive, you have 5 days."'
+    sentences: []

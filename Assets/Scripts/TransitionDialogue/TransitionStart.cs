@@ -25,6 +25,11 @@ public class TransitionStart : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine(WaitForLoad());
+    }
+    IEnumerator WaitForLoad()
+    {
+        yield return new WaitForSeconds(1);
         reload();
     }
 

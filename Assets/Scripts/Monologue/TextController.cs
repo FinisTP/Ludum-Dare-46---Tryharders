@@ -13,9 +13,11 @@ public class TextController : MonoBehaviour
     public Canvas transitionCanvas;
     private Queue<string> sentences;
     string sceneName = "OutdoorScene";
+    private AudioSource audio;
 
     void Start()
     {
+        audio = GetComponent<AudioSource>();
         sentences = new Queue<string>();
     }
 
@@ -49,10 +51,18 @@ public class TextController : MonoBehaviour
     IEnumerator TypeSentence (string sentence)
     {
         currentText.text = "";
+        if (isMonologue)
+        {
+            audio.Play();
+        }
         foreach (char letter in sentence.ToCharArray())
         {
             currentText.text += letter;
             yield return new WaitForSeconds(textSpeed);
+        }
+        if (audio.isPlaying)
+        {
+            audio.Stop();
         }
     }
 

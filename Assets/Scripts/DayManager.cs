@@ -16,6 +16,9 @@ public class DayManager : MonoBehaviour
     public bool choose1 = false;
     public bool choose2 = false;
 
+    public bool wifeAlive = true;
+    public bool childAlive = true;
+
     public int money = 200;
 
     public List<string> infectedName = new List<string>();
@@ -49,6 +52,10 @@ public class DayManager : MonoBehaviour
     {
         if (day < 5)
         {
+            if (actualFood < 0)
+            {
+                GameObject.Find("DialogueManager").GetComponent<DialogueManager>().sendMessage("System", "Your family died of starvation.");
+            }
             day++;
             ToggleDay();
         }
