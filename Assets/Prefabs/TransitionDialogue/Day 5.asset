@@ -27,6 +27,18 @@ MonoBehaviour:
     sentences: []
   downtownTransitionNight:
     sentences: []
+  downtownWithGun:
+    sentences:
+    - The streets are fiilled with bloody infected patients today.
+    - Luckily you equipped yourself with a gun.
+    - Kill them all, so that you and your family will be safe.
+    - KILL. THEM. ALL.
+  downtownWithoutGun:
+    sentences:
+    - It's hopeless, you can never find a normal person walking down these streets.
+    - You have nothing to protect yourself right now. You have nothing to save.
+    - Unless... you can all remaining survivors and infect them.
+    - INFECT. THEM. ALL.
   neighbor1Speech:
     sentences:
     - ... What now? We are all dead tomorrow, let's celebrate, haha!|Give me some

@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -161,11 +161,12 @@ MonoBehaviour:
   endingType: 1
   endingText:
     sentences:
-    - You couldn't protect your family. You start trembling in front of their soulless
-      bodies.
-    - They are incredibly vulnerable to all sorts of threats. Perhaps you should
-      have taken more care...
-    - 'Ending 3: "Keep none alive"'
+    - You have killed all of them, the virus should now be gone from these streets
+      for a short while.
+    - Take care and return home, you have earned your rest.
+    - In the end, despite all your efforts, your family was killed.
+    - You are the sole survivor of Earth.
+    - 'Ending 3: "Keep me alive"'
 --- !u!114 &1366561129 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,
