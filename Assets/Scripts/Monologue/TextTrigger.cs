@@ -25,7 +25,6 @@ public class TextTrigger : MonoBehaviour
             if (GameObject.Find("Player").GetComponent<DayManager>().gun)
             {
                 GameObject.FindObjectOfType<TransitionStart>().dayStatus = DayStatus.downtownwgun;
-
             }
             else
             {

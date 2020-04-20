@@ -36,6 +36,7 @@ public class CharacterManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name=="ThiefScene")
         {
             GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "The door seems a bit loose, you can easily sneak inside with some workaround...");
+            if (GameObject.Find("Player").GetComponent<DayManager>().dicksondie) Destroy(GameObject.Find("Dickson(Clone)"));
         }else if (SceneManager.GetActiveScene().name == "OutdoorScene")
         {
             if (GameObject.Find("Player").GetComponent<DayManager>().actualFood == 0 && !GameObject.Find("Player").GetComponent<DayManager>().daytime && !warnFood)
@@ -53,6 +54,17 @@ public class CharacterManager : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "IndoorScene")
         {
+            if (GameObject.Find("Player").GetComponent<DayManager>().day >= 4)
+            {
+                SceneManager.LoadScene("GameOver");
+                Destroy(GameObject.Find("Player"));
+            }
+            if(GameObject.Find("Player").GetComponent<DayManager>().day == 1)
+            {
+                GameObject.Find("Player").GetComponent<DayManager>().ToggleNight();
+                reupdateScene(GameObject.Find("Player"));
+                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You chose to stay close with your family. Its dark now, your family is hungry");
+            }
             if (!GameObject.Find("Player").GetComponent<DayManager>().wifeAlive || !GameObject.Find("Player").GetComponent<DayManager>().childAlive && !warnInside)
             {
                 warnInside = true;

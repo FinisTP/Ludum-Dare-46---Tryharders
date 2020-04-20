@@ -17,7 +17,15 @@ MonoBehaviour:
     sentences:
     - No matter what happens, I want to die with my wife, my child, I'm sorry ...
   neighborhoodTransitionDay:
-    sentences: []
+    sentences:
+    - 'This is your last chance! You can go to the downtown to seek way to Doctor
+      Irwin...
+
+'
+    - "Otherwise, you can return home and reunite with your family until the end.\r\r\n"
+    - 'Make your choice now...
+
+'
   downtownTransitionDay:
     sentences:
     - They won't let me go through, but I have to....
@@ -37,7 +45,7 @@ MonoBehaviour:
     sentences:
     - It's hopeless, you can never find a normal person walking down these streets.
     - You have nothing to protect yourself right now. You have nothing to save.
-    - Unless... you can all remaining survivors and infect them.
+    - Unless... you can find all remaining survivors and infect them.
     - INFECT. THEM. ALL.
   neighbor1Speech:
     sentences:

@@ -80,7 +80,7 @@ public class Navigator : MonoBehaviour
             }else if (!bell)
             {
                 if(toggleNight) GameObject.Find("Player").GetComponent<DayManager>().ToggleNight();
-                if(SceneManager.GetActiveScene().name == "DowntownScene" && GameObject.Find("Player").GetComponent<DayManager>().day == 1)
+                if(SceneManager.GetActiveScene().name == "DowntownScene"&& GameObject.Find("Player").GetComponent<DayManager>().daytime && GameObject.Find("Player").GetComponent<DayManager>().day == 1)
                 {
                     GameObject.Find("Player").GetComponent<DayManager>().choose1 = true;
                     GameObject.Find("Player").GetComponent<DayManager>().NextDay();

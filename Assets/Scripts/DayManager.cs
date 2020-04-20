@@ -64,28 +64,28 @@ public class DayManager : MonoBehaviour
             }
             day++;
             ToggleDay();
-        }
-        else
-        {
-            GameObject.Find("Player").GetComponent<PlayerMovement>().infected = true;
-            infectedName.Add("Carla");
-            infectedName.Add("Irana");
-            infectedName.Add("Dickson");
-            infectedName.Add("Castil");
+            if(day >= 4)
+            {
+                GameObject.Find("Player").GetComponent<PlayerMovement>().infected = true;
+                infectedName.Add("Carla");
+                infectedName.Add("Irana");
+                infectedName.Add("Dickson");
+                infectedName.Add("Castil");
+            }
         }
         if (mask > 0) mask--;
     }
 
     public void ToggleDay()
     {
-        if(day < 4)
+        if(day < 5)
         {
             daytime = true;
         }
     }
     public void ToggleNight()
     {
-        if (day < 4)
+        if (day < 5)
         {
             daytime = false;
         }

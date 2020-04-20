@@ -465,7 +465,7 @@ PrefabInstance:
     - target: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,
         type: 3}
       propertyPath: text.sentences.Array.data[3]
-      value: She invited you to go to downtown to meet her tonight...
+      value: She invited you to go to downtown to meet her right now...
       objectReference: {fileID: 0}
     - target: {fileID: 4204882428792750126, guid: 4c75fc769cbe208498af87c14c32542c,
         type: 3}

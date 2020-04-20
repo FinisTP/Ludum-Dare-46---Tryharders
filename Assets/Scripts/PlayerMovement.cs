@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
                         if (!gameObject.GetComponent<DayManager>().infectedName.Contains(list[i].name)) gameObject.GetComponent<DayManager>().infectedName.Add(list[i].name);
                     }
                 }
-                if (check)
+                if (SceneManager.GetActiveScene().name == "DowntownScene" && gameObject.GetComponent<DayManager>().day >= 4 && check)
                 {
                     SceneManager.LoadScene("Ending04");
                     Destroy(gameObject);
