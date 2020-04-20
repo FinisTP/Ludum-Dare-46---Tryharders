@@ -41,8 +41,8 @@ MonoBehaviour:
     sentences:
     - ... THOSE DAMN SULLY RAVAGERS !!!
     - Poor my daughter Lola, she's killed by a ravager... and * cough cough * ...
-    - She laid dead on in front of me, AND THAT DAMN BASTARD ESCAPED !!!|Ask for
-      some food/3,Convince to leave family alone/4,Nothing/5
+    - She laid dead on in front of me, AND THAT DAMN BASTARD ESCAPED !!!|Give me
+      some food/3,Don't hurt my family/4,Nothing/5
     - ':food:Take this and scoot off...
 
       [6'
@@ -56,7 +56,7 @@ MonoBehaviour:
     sentences:
     - Another person killed... bloody on my doormat... this is unreal.
     - It's my dad, died of infection, before seeing me for the final time... I hope
-      this is just a bad dream.|Ask for some food/2,Convince to leave family alone/3,Nothing/4
+      this is just a bad dream.|Give me some food/2,Don't hurt my family/3,Nothing/4
     - 'Forget it, I have problems keeping myself alive until tomorrow....
 
       [5'

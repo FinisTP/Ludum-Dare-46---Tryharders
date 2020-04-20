@@ -15,8 +15,8 @@ MonoBehaviour:
   dayNumber: 0
   familyTransitionDay:
     sentences:
-    - 'You stayed home and took care of yourself your family. '
-    - Do some chores so that their health declines at a lower rate.
+    - Your family is starving, they will starve after one day without being fed...
+    - You should buy groceries from the mart and cook on the kitchen.
   neighborhoodTransitionDay:
     sentences: []
   downtownTransitionDay:
@@ -27,22 +27,20 @@ MonoBehaviour:
     - You should try to avoid them...
   familyTransitionNight:
     sentences:
-    - 'In such a harsh era, the unemployed turns into banditry. '
-    - 'They ravage the houses and bring everything they can back home. '
-    - But the worst situation is if they themselves carry disease to your family...
-    - ' Kill them.'
+    - Your family may be hungry, cook something up.
   neighborhoodTransitionNight:
     sentences:
-    - At an instant, you caught glimpse of a neighbor's door opening loosely.
-    - A sweet chance for some money, don't you think?
+    - At night, you can go around the area and sneak into unsuspecting neighbors...
+    - But be careful, calamity calls for extreme caution, they can exterminate you
+      on sight...
   downtownTransitionNight:
     sentences: []
   neighbor1Speech:
     sentences:
     - Howdy! Is Irana doing fine? We haven't talked for weeks, right now I just want
       to stay home and watch for my sole daughter...
-    - Oh! Pardon me, looks like you need something.|Ask for some food/2,Convince
-      to leave family alone/3,Nothing/4
+    - Oh! Pardon me, looks like you need something.|Give me some food/2,Don't hurt
+      my family/3,Nothing/4
     - ':food:You have my sympathy, here is what my family has left for today...
 
       [5'
@@ -55,7 +53,7 @@ MonoBehaviour:
     - Oh lord! It is rare to have a guest visit me in this pandemic circumstance.
     - Anyway, my dad is doing fine, his wheel-bound condition may alleviate as time
       goes by...
-    - So, how may I help you?|Ask for some food/3,Convince to leave family alone/4,Nothing/5
+    - So, how may I help you?|Give me some food/3,Don't hurt my family/4,Nothing/5
     - 'I''m afraid you will have to ask other neighbors, I have developed trust issues
       since hearing coughing around my house.
 

@@ -43,8 +43,8 @@ MonoBehaviour:
   neighbor1Speech:
     sentences:
     - Dang... these drugs sure shrug me off the fear of pandemic...
-    - Maybe that's why Lola keeps coughing... Anyway, maybe you wanna try some?|Ask
-      for some food/2,Convince to leave family alone/3,Nothing/4
+    - Maybe that's why Lola keeps coughing... Anyway, maybe you wanna try some?|Give
+      me some food/2,Don't hurt my family/3,Nothing/4
     - 'That''s not polite of you to ask for food when you are better-off than three-fourth
       of this world.
 
@@ -61,8 +61,8 @@ MonoBehaviour:
       happening.
     - Besides, have you heard loud screams around midnight? I thought it was coming
       from yours...
-    - We should help each other... I don't know if I can stay safe with my dad anymore...|Ask
-      for some food/3,Convince to leave family alone/4,Nothing/5
+    - We should help each other... I don't know if I can stay safe with my dad anymore...|Give
+      me some food/3,Don't hurt my family/4,Nothing/5
     - ':food:Of course! Hopefully this may be enough for your family, but not you
       unfortunately...
 

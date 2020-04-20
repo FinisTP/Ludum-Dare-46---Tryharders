@@ -29,8 +29,8 @@ MonoBehaviour:
     sentences: []
   neighbor1Speech:
     sentences:
-    - ... What now? We are all dead tomorrow, let's celebrate, haha!|Ask for some
-      food/1,Convince to leave family alone/2,Nothing/3
+    - ... What now? We are all dead tomorrow, let's celebrate, haha!|Give me some
+      food/1,Don't hurt my family/2,Nothing/3
     - 'Having been robbed, and having my child murdered in front of my eyes... Please
       say no more... * cough *
 
@@ -46,7 +46,7 @@ MonoBehaviour:
     sentences:
     - We need to escape... from life instead.. EHEHEHEHEHEHEHE !!!
     - What's so funny? HA, to think we will all dead by daylight! I wonder why you
-      are still out here....|Ask for some food/2,Convince to leave family alone/3,Nothing/4
+      are still out here....|Give me some food/2,Don't hurt my family/3,Nothing/4
     - ':food:Don''t mention it, the only thing I can do now is to prevent others
       from suffering the same fate...
 

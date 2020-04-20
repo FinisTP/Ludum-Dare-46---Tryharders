@@ -10,6 +10,12 @@ public class CharacterManager : MonoBehaviour
     public float[] lightDay;
     public float[] lightNight;
     public Sprite castil, irana;
+
+
+    public bool warnFood = false;
+    public bool warnOutside = false;
+    public bool warnInside = false;
+
     void Start()
     {
         GameObject[] list = GameObject.FindGameObjectsWithTag("Object");
@@ -33,20 +39,31 @@ public class CharacterManager : MonoBehaviour
             GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "The door seems a bit loose, you can easily sneak inside with some workaround...");
         }else if (SceneManager.GetActiveScene().name == "OutdoorScene")
         {
-            if (GameObject.Find("Player").GetComponent<DayManager>().actualFood == 0 && !GameObject.Find("Player").GetComponent<DayManager>().daytime) GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "Your family is hungry. Go buy some food and cook it in the kitchen");
-            if(GameObject.Find("Player").GetComponent<DayManager>().choose1 && GameObject.Find("Player").GetComponent<DayManager>().day == 3)
+            if (GameObject.Find("Player").GetComponent<DayManager>().actualFood == 0 && !GameObject.Find("Player").GetComponent<DayManager>().daytime && !warnFood)
+            {
+                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "Your family is hungry. Go buy some food and cook it in the kitchen");
+                warnFood = true;
+            }
+                
+            if(GameObject.Find("Player").GetComponent<DayManager>().choose1 && GameObject.Find("Player").GetComponent<DayManager>().day == 3 && !warnOutside)
             {
                 GameObject.Find("Player").GetComponent<DayManager>().choose1 = false;
-                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You got suspected by a police and were forced into quarantine for 2 days.");
+                warnOutside = true;
+                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You had so much fun with Athena... But she kept you f*cking on for two days straight...");
             }
         }
         else if (SceneManager.GetActiveScene().name == "IndoorScene")
         {
-            if (!GameObject.Find("Player").GetComponent<DayManager>().wifeAlive || !GameObject.Find("Player").GetComponent<DayManager>().childAlive)
+            if (!GameObject.Find("Player").GetComponent<DayManager>().wifeAlive || !GameObject.Find("Player").GetComponent<DayManager>().childAlive && !warnInside)
             {
-                if (GameObject.Find("Player").GetComponent<DayManager>().day == 2 && !GameObject.Find("Player").GetComponent<DayManager>().daytime)
+                warnInside = true;
+                if (GameObject.Find("Player").GetComponent<DayManager>().day == 2 && !GameObject.Find("Player").GetComponent<DayManager>().daytime && GameObject.Find("Player").GetComponent<DayManager>().choose2)
                 {
-                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "Your wife and your child have been murdered");
+                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "Your wife and your child have been murdered.");
+                }
+                else
+                {
+                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "Your wife and your child starved to death.");
                 }
                 GameObject.Find("Castil").GetComponent<Animator>().runtimeAnimatorController = null;
                 GameObject.Find("Irana").GetComponent<Animator>().runtimeAnimatorController = null;
@@ -62,6 +79,7 @@ public class CharacterManager : MonoBehaviour
             {
                 GameObject.Find("Player").GetComponent<DayManager>().wifeAlive = false;
                 GameObject.Find("Player").GetComponent<DayManager>().childAlive = false;
+                GameObject.Find("Player").GetComponent<DayManager>().choose2 = true;
             }
         }
     }
