@@ -16,6 +16,8 @@ public class DayManager : MonoBehaviour
     public bool choose1 = false;
     public bool choose2 = false;
 
+    public bool dicksondie = false;
+
     public bool wifeAlive = true;
     public bool childAlive = true;
 

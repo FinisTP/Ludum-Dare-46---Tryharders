@@ -35,7 +35,6 @@ public class CharacterManager : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().name=="ThiefScene")
         {
-            Debug.Log("alo");
             GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "The door seems a bit loose, you can easily sneak inside with some workaround...");
         }else if (SceneManager.GetActiveScene().name == "OutdoorScene")
         {
@@ -81,6 +80,10 @@ public class CharacterManager : MonoBehaviour
                 GameObject.Find("Player").GetComponent<DayManager>().childAlive = false;
                 GameObject.Find("Player").GetComponent<DayManager>().choose2 = true;
             }
+        }
+        if (GameObject.Find("Dickson(Clone)") != null && GameObject.Find("Player").GetComponent<DayManager>().dicksondie)
+        {
+            Destroy(GameObject.Find("Dickson(Clone)"));
         }
     }
 

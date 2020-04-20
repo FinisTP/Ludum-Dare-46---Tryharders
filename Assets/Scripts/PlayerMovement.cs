@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     float timeSneeze = 0;
 
     public bool canMove = true;
+    public Sprite dickson;
 
     void Start()
     {
@@ -41,9 +42,17 @@ public class PlayerMovement : MonoBehaviour
     }
     void interactCheck()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && gameObject.GetComponent<DayManager>().knife)
         {
-            anim.SetTrigger("punch");
+            anim.SetTrigger("attack");
+            if(GameObject.Find("Dickson(Clone)") != null && Vector2.Distance(GameObject.Find("Dickson(Clone)").transform.position,transform.position) < 3)
+            {
+                GameObject.Find("Dickson(Clone)").GetComponent<Animator>().runtimeAnimatorController = null;
+                GameObject.Find("Dickson(Clone)").GetComponent<SpriteRenderer>().sprite = dickson;
+                Destroy(GameObject.Find("Dickson(Clone)").GetComponent<BotController>());
+                Destroy(GameObject.Find("Dickson(Clone)").GetComponent<ThiefBehaviour>());
+                gameObject.GetComponent<DayManager>().dicksondie = true;
+            }
         }
     }
     void movementCheck()
@@ -63,7 +72,8 @@ public class PlayerMovement : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(-transform.position.y * 10 + 100);
         }
         else anim.SetBool("playerWalk", false);
-        transform.position += new Vector3(moveHoriontal * speed * Time.deltaTime, moveVertical * speed * Time.deltaTime, 0);
+        gameObject.GetComponent<Rigidbody2D>().MovePosition(new Vector2(transform.position.x+moveHoriontal*speed*Time.deltaTime, transform.position.y+ moveVertical*speed * Time.deltaTime));
+        //transform.position += new Vector3(moveHoriontal * speed * Time.deltaTime, moveVertical * speed * Time.deltaTime, 0);
         anim.SetFloat("Horizontal", moveHoriontal);
         anim.SetFloat("Vertical", moveVertical);
     }

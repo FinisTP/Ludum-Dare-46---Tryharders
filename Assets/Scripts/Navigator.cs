@@ -31,15 +31,28 @@ public class Navigator : MonoBehaviour
         if (typoCheck != null && typoCheck.activeSelf) return;
         if (Input.GetKeyDown(KeyCode.F) && inside)
         {
-            if(money > 0)
+            if(money > 0 || money < 0)
             {
+                if (money < 0)
+                {
+                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "No money left for you to take");
+                    return;
+                }
                 GameObject.Find("Player").GetComponent<DayManager>().money += money;
                 GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You take 20 C from the drawer");
-            }else if (food > 0)
+                money = -1;
+            }else if (food > 0 || food < 0)
             {
+                if(food < 0)
+                {
+                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "'Its enough' - you said");
+                    return;
+                }
                 GameObject.Find("Player").GetComponent<DayManager>().food += food;
                 GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You take enough food for your family for one day");
-            }else if (cooking != null)
+                food = -1;
+            }
+            else if (cooking != null)
             {
                 if (GameObject.Find("Player").GetComponent<DayManager>().food > 0)
                 {
@@ -79,10 +92,13 @@ public class Navigator : MonoBehaviour
             {
                 if (neighbor != null)
                 {
-                    if (GameObject.Find("Player").GetComponent<DayManager>().daytime) StartCoroutine(ring());
+                    if (GameObject.Find("Player").GetComponent<DayManager>().daytime)
+                    {
+                        StartCoroutine(ring());
+                    }
                     else
                     {
-                        if(type == DayStatus.n1speech) GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "The door is locked shut.");
+                        if (type == DayStatus.n1speech) GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "The door is locked shut.");
                         else
                         {
                             SceneManager.LoadScene("ThiefScene");
@@ -98,13 +114,16 @@ public class Navigator : MonoBehaviour
         if (GameObject.Find("PlayerHint").GetComponent<Text>().text == message) GameObject.Find("PlayerHint").GetComponent<Text>().text = "";
         source.Play();
         yield return new WaitForSeconds(1.5f);
-        GameObject n = Instantiate(neighbor);
-        if (GameObject.Find("Player").GetComponent<DayManager>().infectedName.Contains(n.name)) n.GetComponent<BotController>().infected = true;
-        n.transform.position = transform.position;
-        neighbor = null;
-        n.GetComponent<BotController>().neighbor = true;
-        gameObject.GetComponent<DialogueTrigger>().dialogue.sentence = GameObject.Find("Player").GetComponent<DayManager>().getS(type).ToArray();
-        gameObject.GetComponent<DialogueTrigger>().TriggerDialogue(false);
+        if (!(type == DayStatus.n2speech && GameObject.Find("Player").GetComponent<DayManager>().dicksondie))
+        {
+            GameObject n = Instantiate(neighbor);
+            if (GameObject.Find("Player").GetComponent<DayManager>().infectedName.Contains(n.name)) n.GetComponent<BotController>().infected = true;
+            n.transform.position = transform.position;
+            neighbor = null;
+            n.GetComponent<BotController>().neighbor = true;
+            gameObject.GetComponent<DialogueTrigger>().dialogue.sentence = GameObject.Find("Player").GetComponent<DayManager>().getS(type).ToArray();
+            gameObject.GetComponent<DialogueTrigger>().TriggerDialogue(false);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

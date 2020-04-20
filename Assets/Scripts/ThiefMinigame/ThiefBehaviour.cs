@@ -58,6 +58,6 @@ public class ThiefBehaviour : MonoBehaviour
         GameObject.Find("Player").GetComponent<PlayerMovement>().canMove = false;
         yield return new WaitForSeconds(3f);
         Destroy(GameObject.Find("Player"));
-        SceneManager.LoadScene("GameOver");
+        SceneManager.LoadScene("Ending01");
     }
 }
