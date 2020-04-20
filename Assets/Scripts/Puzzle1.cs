@@ -10,6 +10,7 @@ public class Puzzle1 : MonoBehaviour
     public GameObject bot;
     public int defaultSpawn = 10;
     public int defaultSpawnInfected = 5;
+    public RuntimeAnimatorController a1, a2;
     void Start()
     {
         spawn(); //Spawn truoc mot so nguoi di duong
@@ -19,6 +20,7 @@ public class Puzzle1 : MonoBehaviour
         for (int i = 0; i < defaultSpawn+defaultSpawnInfected; i++)
         {
             GameObject b = Instantiate(bot, transform);
+            b.GetComponent<Animator>().runtimeAnimatorController = (Random.Range(0, 10) > 5 ? a1 : a2);
             b.transform.position = transform.position + new Vector3(Random.Range(-rangeX, rangeX), Random.Range(-rangeY, rangeY), 0);
             b.GetComponent<BotController>().target = transform.position + new Vector3(Random.Range(0, 10) > 5 ? -rangeX : rangeX, Random.Range(-rangeY, rangeY));
             b.GetComponent<BotController>().pedestrian = true;

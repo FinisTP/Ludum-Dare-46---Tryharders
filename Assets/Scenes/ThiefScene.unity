@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -309,6 +309,7 @@ MonoBehaviour:
   animator: {fileID: 320337912}
   continueButton: 0
   index: 0
+  gameObjects: []
 --- !u!4 &201686678
 Transform:
   m_ObjectHideFlags: 0
@@ -585,7 +586,7 @@ SpriteRenderer:
   m_SortingLayerID: 323817727
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9186371461854760162, guid: 982182e0ece567c40822779167987497,
+  m_Sprite: {fileID: -9186371461854760162, guid: f5458bfb25b8f0c4b94a959b79dcb392,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -821,13 +822,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6291159824847106106, guid: 982182e0ece567c40822779167987497,
+  m_Sprite: {fileID: 6291159824847106106, guid: f5458bfb25b8f0c4b94a959b79dcb392,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 17, y: 21.25}
+  m_Size: {x: 16.75, y: 21.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -906,9 +907,12 @@ MonoBehaviour:
   message: Press F to go outside
   navigateSceneName: OutdoorScene
   bell: 0
+  interactTalk: 0
+  nextday: 0
   neighbor: {fileID: 0}
   source: {fileID: 0}
   type: 0
+  toggleNight: 0
 --- !u!4 &404496633
 Transform:
   m_ObjectHideFlags: 0
@@ -1446,7 +1450,7 @@ SpriteRenderer:
   m_SortingLayerID: 323817727
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4184707788374646297, guid: 982182e0ece567c40822779167987497,
+  m_Sprite: {fileID: -4184707788374646297, guid: f5458bfb25b8f0c4b94a959b79dcb392,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2143,13 +2147,13 @@ SpriteRenderer:
   m_SortingLayerID: 323817727
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3562756337989262567, guid: 982182e0ece567c40822779167987497,
+  m_Sprite: {fileID: -3562756337989262567, guid: f5458bfb25b8f0c4b94a959b79dcb392,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 33.5, y: 4}
+  m_Size: {x: 33.4375, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3428,13 +3432,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6384403203689300353, guid: 982182e0ece567c40822779167987497,
+  m_Sprite: {fileID: 6384403203689300353, guid: f5458bfb25b8f0c4b94a959b79dcb392,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 17, y: 12}
+  m_Size: {x: 16.5625, y: 12.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4023,6 +4027,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 1140347224813902380, guid: 0eb624d9caa0fd84cbea0206d57ac25f, type: 3}
+  lightDay: []
+  lightNight: []
 --- !u!4 &1638237469
 Transform:
   m_ObjectHideFlags: 0
@@ -4585,13 +4591,13 @@ SpriteRenderer:
   m_SortingLayerID: 323817727
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -507361993757026799, guid: 982182e0ece567c40822779167987497,
+  m_Sprite: {fileID: -507361993757026799, guid: f5458bfb25b8f0c4b94a959b79dcb392,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 33.5, y: 2.5}
+  m_Size: {x: 33.4375, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
