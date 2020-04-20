@@ -300,6 +300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   infected: 0
+  canMove: 1
 --- !u!95 &1140347224813902381
 Animator:
   serializedVersion: 3
@@ -416,11 +417,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 54bcbcbf093a8d643996d60e8afae461, type: 2}
   day: 0
   food: 0
+  actualFood: 0
   gun: 0
   knife: 0
   mask: 0
   choose1: 0
   choose2: 0
+  wifeAlive: 1
+  childAlive: 1
   money: 200
   infectedName: []
   daytime: 1
+  alreadyTypo: []

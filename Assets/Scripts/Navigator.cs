@@ -6,23 +6,40 @@ using UnityEngine.SceneManagement;
 public class Navigator : MonoBehaviour
 {
     public string message = "Press F to go home";
+    public string nightMessage = "";
     public string navigateSceneName = "OutdoorScene";
     bool inside = false;
     public bool bell = false;
     public bool interactTalk = false;
     public bool nextday = false;
+    public int money = 0;
+    public int food = 0;
     public GameObject cooking;
     public GameObject neighbor;
+    public GameObject typoCheck;
 
     public AudioSource source;
     public DayStatus type;
 
     public bool toggleNight = false;
+    private void Start()
+    {
+
+    }
     void Update()
     {
+        if (typoCheck != null && typoCheck.activeSelf) return;
         if (Input.GetKeyDown(KeyCode.F) && inside)
         {
-            if (cooking != null)
+            if(money > 0)
+            {
+                GameObject.Find("Player").GetComponent<DayManager>().money += money;
+                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You take 20 C from the drawer");
+            }else if (food > 0)
+            {
+                GameObject.Find("Player").GetComponent<DayManager>().food += food;
+                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You take enough food for your family for one day");
+            }else if (cooking != null)
             {
                 if (GameObject.Find("Player").GetComponent<DayManager>().food > 0)
                 {
@@ -31,7 +48,7 @@ public class Navigator : MonoBehaviour
                 }
                 else
                 {
-                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You dont have any food to cook");
+                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You don't have any food to cook");
                 }
             }else if (nextday)
             {
@@ -94,7 +111,8 @@ public class Navigator : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             if (bell && neighbor == null) return;
-            GameObject.Find("PlayerHint").GetComponent<Text>().text = message;
+            if(!GameObject.Find("Player").GetComponent<DayManager>().daytime && nightMessage.Length > 0) GameObject.Find("PlayerHint").GetComponent<Text>().text = nightMessage;
+            else GameObject.Find("PlayerHint").GetComponent<Text>().text = message;
             inside = true;
         }
     }

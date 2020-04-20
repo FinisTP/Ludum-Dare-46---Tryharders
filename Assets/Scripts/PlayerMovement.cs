@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public bool infected = false;
     float timeSneeze = 0;
 
+    public bool canMove = true;
+
     void Start()
     {
         DontDestroyOnLoad(gameObject);
@@ -46,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void movementCheck()
     {
+        if (!canMove) return;
         float moveHoriontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
         if (moveHoriontal != 0 || moveVertical != 0)

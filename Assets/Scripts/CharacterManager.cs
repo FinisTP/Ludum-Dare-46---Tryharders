@@ -13,7 +13,7 @@ public class CharacterManager : MonoBehaviour
     void Start()
     {
         GameObject[] list = GameObject.FindGameObjectsWithTag("Object");
-        for(int i = 0; i < list.Length;i++) list[i].GetComponent<SpriteRenderer>().sortingOrder = (int)(-list[i].transform.position.y * 10 + 100);
+        for(int i = 0; i < list.Length;i++) if(list[i].GetComponent<SpriteRenderer>() != null)list[i].GetComponent<SpriteRenderer>().sortingOrder = (int)(-list[i].transform.position.y * 10 + 100);
         if (GameObject.Find("Player") == null)
         {
             GameObject p = Instantiate(main);
@@ -29,6 +29,7 @@ public class CharacterManager : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().name=="ThiefScene")
         {
+            Debug.Log("alo");
             GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "The door seems a bit loose, you can easily sneak inside with some workaround...");
         }else if (SceneManager.GetActiveScene().name == "OutdoorScene")
         {

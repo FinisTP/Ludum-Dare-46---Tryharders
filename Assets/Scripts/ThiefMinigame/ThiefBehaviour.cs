@@ -26,7 +26,7 @@ public class ThiefBehaviour : MonoBehaviour
         if (collider.GetComponent<PolygonCollider2D>().bounds.Contains(GameObject.Find("Player").transform.position))
         {
             RaycastHit2D hit = Physics2D.Linecast(transform.position, GameObject.Find("Player").transform.position);
-            if (hit.collider == null || (hit.collider.tag != "Object"))
+            if (hit.collider == null || (hit.collider.tag != "Object" && hit.collider.gameObject.name != "circle"))
             {
                 if (shoot) return;
                 else shoot = true;
@@ -55,7 +55,9 @@ public class ThiefBehaviour : MonoBehaviour
     {
         GameObject.Find("Player").GetComponent<Animator>().runtimeAnimatorController = null;
         GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = die;
-        yield return new WaitForSeconds(2.5f);
+        GameObject.Find("Player").GetComponent<PlayerMovement>().canMove = false;
+        yield return new WaitForSeconds(3f);
+        Destroy(GameObject.Find("Player"));
         SceneManager.LoadScene("GameOver");
     }
 }

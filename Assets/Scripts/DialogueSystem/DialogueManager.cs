@@ -48,7 +48,12 @@ public class DialogueManager : MonoBehaviour
                 answer.transform.GetChild(0).GetComponent<Text>().text = ans[k].Split('/')[0].Split('[')[0];
             }
         }
-
+        if (sentences[index].Contains(":food:"))
+        {
+            sentences[index] = sentences[index].Replace(":food:", "");
+            GameObject.Find("Player").GetComponent<DayManager>().food++;
+            sentences.Insert(index, "You receive food enough for 1 day["+(index+1));
+        }
         StartCoroutine(TypeSentence(sentences[index].Split('[')[0]));
         if (sentences[index].Contains("[")) index = int.Parse(sentences[index].Split('/')[0].Split('[')[1]);
         
@@ -88,6 +93,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentence = sentence.Replace(":food:","");
             GameObject.Find("Player").GetComponent<DayManager>().food++;
+            sentences.Insert(index, "You receive food enough for 1 day[" + (index + 1));
         }
         else index++;
         StartCoroutine(TypeSentence(sentence.Split('|')[0].Split('[')[0]));

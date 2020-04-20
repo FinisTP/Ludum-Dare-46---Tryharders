@@ -202,6 +202,12 @@ Transform:
   m_Father: {fileID: 1666560185}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &65092173 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5347447448581954406, guid: 95ac6633b95374f47985b53a8028f1e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 8101779284027129142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &70916770
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,14 +838,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4221f0afc61d6a4c832ccae1ab20ed6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Press F to go downtown
+  message: Press F to ring the bell
+  nightMessage: Press F to break in
   navigateSceneName: DowntownScene
   bell: 1
   interactTalk: 0
   nextday: 0
+  money: 0
+  food: 0
   cooking: {fileID: 0}
   neighbor: {fileID: 9059835385619455363, guid: bdc74e5009a683e4d92b55f3e8956ba1,
     type: 3}
+  typoCheck: {fileID: 0}
   source: {fileID: 488646647}
   type: 6
   toggleNight: 0
@@ -2012,12 +2022,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Press F to go downtown
+  nightMessage: 
   navigateSceneName: DowntownScene
   bell: 0
   interactTalk: 0
   nextday: 0
+  money: 0
+  food: 0
   cooking: {fileID: 0}
   neighbor: {fileID: 0}
+  typoCheck: {fileID: 65092173}
   source: {fileID: 0}
   type: 0
   toggleNight: 0
@@ -2029,7 +2043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025443921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.18, y: 0.64, z: 0}
+  m_LocalPosition: {x: -6.18, y: -0.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4021,12 +4035,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   message: Press F to come inside
+  nightMessage: 
   navigateSceneName: IndoorScene
   bell: 0
   interactTalk: 0
   nextday: 0
+  money: 0
+  food: 0
   cooking: {fileID: 0}
   neighbor: {fileID: 0}
+  typoCheck: {fileID: 65092173}
   source: {fileID: 0}
   type: 0
   toggleNight: 0
@@ -4403,14 +4421,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4221f0afc61d6a4c832ccae1ab20ed6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  message: Press F to go downtown
+  message: Press F to ring the bell
+  nightMessage: Press F to break in
   navigateSceneName: DowntownScene
   bell: 1
   interactTalk: 0
   nextday: 0
+  money: 0
+  food: 0
   cooking: {fileID: 0}
   neighbor: {fileID: 8787239088682498846, guid: bdf2ded9f46bf484796d3027fedbdbb2,
     type: 3}
+  typoCheck: {fileID: 0}
   source: {fileID: 1953764882}
   type: 7
   toggleNight: 0
