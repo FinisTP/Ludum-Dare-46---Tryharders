@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -549,7 +549,7 @@ GameObject:
   - component: {fileID: 280059709}
   - component: {fileID: 280059708}
   m_Layer: 0
-  m_Name: Irana (1)
+  m_Name: Castil
   m_TagString: Entity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -726,7 +726,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280059707}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.46, y: 16.43, z: 0}
+  m_LocalPosition: {x: -4.66, y: 16.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5067,6 +5067,8 @@ MonoBehaviour:
   - 0.7
   - 0.5
   - 1
+  castil: {fileID: 21300000, guid: f54f65898fb715b429aee72e9e7275dd, type: 3}
+  irana: {fileID: 21300000, guid: 9a31bd59286580344afffb6e38ea1b40, type: 3}
 --- !u!4 &1812317354
 Transform:
   m_ObjectHideFlags: 0
@@ -6628,7 +6630,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6204743610508875197}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.78, y: 16.71, z: 0}
+  m_LocalPosition: {x: 3.06, y: 16.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

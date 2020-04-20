@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ThiefBehaviour : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class ThiefBehaviour : MonoBehaviour
     public float waitTime = 4f;
     public float time = 0;
     public int i = 0;
-    public GameObject collider;
+    GameObject collider;
+    bool shoot = false;
+    public Sprite die;
     void Start()
     {
         collider = transform.GetChild(0).gameObject;
@@ -23,9 +26,13 @@ public class ThiefBehaviour : MonoBehaviour
         if (collider.GetComponent<PolygonCollider2D>().bounds.Contains(GameObject.Find("Player").transform.position))
         {
             RaycastHit2D hit = Physics2D.Linecast(transform.position, GameObject.Find("Player").transform.position);
-            if (hit.collider == null || (hit.collider.name != "Object" && hit.collider.name != "circle"))
+            if (hit.collider == null || (hit.collider.tag != "Object"))
             {
-
+                if (shoot) return;
+                else shoot = true;
+                gameObject.GetComponent<Animator>().SetTrigger("picking");
+                gameObject.GetComponent<AudioSource>().Play();
+                StartCoroutine(died());
             }
         }
         Transform mp = movingPositions[i];
@@ -34,11 +41,21 @@ public class ThiefBehaviour : MonoBehaviour
         collider.transform.eulerAngles = new Vector3(0,0,Mathf.Atan2(dir.y,dir.x)*180/Mathf.PI-90);
         if(Vector2.Distance(movingPositions[i].transform.position, gameObject.transform.position) < 0.1f)
         {
-            if (time > waitTime) i++;
+            if (time > waitTime)
+            {
+                if (i < movingPositions.Count) i++;
+                else i = 0;
+            }
             time += Time.deltaTime;
             return;
         }
         gameObject.GetComponent<BotController>().target = new Vector3(mp.transform.position.x, mp.transform.position.y, 0);
     }
-
+    IEnumerator died()
+    {
+        GameObject.Find("Player").GetComponent<Animator>().runtimeAnimatorController = null;
+        GameObject.Find("Player").GetComponent<SpriteRenderer>().sprite = die;
+        yield return new WaitForSeconds(2.5f);
+        SceneManager.LoadScene("GameOver");
+    }
 }

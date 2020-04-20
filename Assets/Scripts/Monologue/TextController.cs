@@ -12,7 +12,7 @@ public class TextController : MonoBehaviour
     public bool isMonologue = false;
     public Canvas transitionCanvas;
     private Queue<string> sentences;
-    string sceneName = "OutdoorScene";
+    public string sceneName = "OutdoorScene";
     private AudioSource audio;
 
     void Start()
@@ -24,9 +24,12 @@ public class TextController : MonoBehaviour
     public void StartText(TextBehaviour text) 
     {
         sentences.Clear();
-
+        DayManager manager = null;
+        if(GameObject.Find("Player")!=null) manager = GameObject.Find("Player").GetComponent<DayManager>();
         foreach(string sentence in text.sentences)
         {
+            if (manager != null) if (manager.alreadyTypo.Contains(sentence)) { continue;
+                } else manager.alreadyTypo.Add(sentence);
             sentences.Enqueue(sentence);
         }
 

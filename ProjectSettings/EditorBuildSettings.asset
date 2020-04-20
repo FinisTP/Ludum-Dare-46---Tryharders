@@ -35,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Monologues/Day5Monologue.unity
     guid: 4249c670aaa3d174ea2ee36fa282fe96
+  - enabled: 1
+    path: Assets/Scenes/ThiefScene.unity
+    guid: 06789aa58e40a2340a039b3848b08393
+  - enabled: 1
+    path: Assets/Scenes/Endings/GameOver.unity
+    guid: fde28f235fec6ee42aa787dde5d54761
   m_configObjects: {}

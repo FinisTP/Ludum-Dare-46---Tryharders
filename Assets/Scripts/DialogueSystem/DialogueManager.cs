@@ -96,7 +96,7 @@ public class DialogueManager : MonoBehaviour
     {
         animator.SetBool("IsOpen", true);
         nameText.text = author;
-        sentences.Clear();
+        if(sentences != null) sentences.Clear();
         StartCoroutine(TypeSentence(message));
     }
     IEnumerator TypeSentence(string sentence)

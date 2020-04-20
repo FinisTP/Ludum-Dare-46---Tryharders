@@ -40,6 +40,8 @@ public class Navigator : MonoBehaviour
                     GameObject.Find("Player").GetComponent<DayManager>().NextDay();
                     SceneManager.LoadScene("Day" + (GameObject.Find("Player").GetComponent<DayManager>().day + 1) + "Monologue");
                 }
+                else
+                    GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "It's too soon to go to sleep");
             }
             else if (interactTalk)
             {
@@ -48,11 +50,28 @@ public class Navigator : MonoBehaviour
             }else if (!bell)
             {
                 if(toggleNight) GameObject.Find("Player").GetComponent<DayManager>().ToggleNight();
+                if(SceneManager.GetActiveScene().name == "DowntownScene" && GameObject.Find("Player").GetComponent<DayManager>().day == 1)
+                {
+                    GameObject.Find("Player").GetComponent<DayManager>().choose1 = true;
+                    GameObject.Find("Player").GetComponent<DayManager>().NextDay();
+                    GameObject.Find("Player").GetComponent<DayManager>().NextDay();
+                }
                 SceneManager.LoadScene(navigateSceneName);
             }
             else
             {
-                if (neighbor != null) StartCoroutine(ring());
+                if (neighbor != null)
+                {
+                    if (GameObject.Find("Player").GetComponent<DayManager>().daytime) StartCoroutine(ring());
+                    else
+                    {
+                        if(type == DayStatus.n1speech) GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "The door is locked shut.");
+                        else
+                        {
+                            SceneManager.LoadScene("ThiefScene");
+                        }
+                    }
+                }
             }
         }
     }

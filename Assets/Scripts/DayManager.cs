@@ -25,6 +25,7 @@ public class DayManager : MonoBehaviour
 
     public bool daytime = true;
 
+    public List<string> alreadyTypo = new List<string>();
     public DailyTransition getScript()
     {
         return list[day];
@@ -50,8 +51,9 @@ public class DayManager : MonoBehaviour
 
     public void NextDay()
     {
-        if (day < 5)
+        if (day < 4)
         {
+            actualFood--;
             if (actualFood < 0)
             {
                 wifeAlive = false;
@@ -61,19 +63,23 @@ public class DayManager : MonoBehaviour
             day++;
             ToggleDay();
         }
+        else
+        {
+
+        }
         if (mask > 0) mask--;
     }
 
     public void ToggleDay()
     {
-        if(day < 5)
+        if(day < 4)
         {
             daytime = true;
         }
     }
     public void ToggleNight()
     {
-        if (day < 5)
+        if (day < 4)
         {
             daytime = false;
         }

@@ -11,9 +11,14 @@ public class Shop : MonoBehaviour
     {
         if(collision.gameObject.name == "Player")
         {
+            if (GameObject.Find("Player").GetComponent<DayManager>().day >= 3)
+            {
+                for (int i = 0; i < shop.transform.childCount; i++) Destroy(shop.transform.GetChild(i).gameObject);
+            }
+            else
+                text.gameObject.SetActive(true);
             shop.SetActive(true);
             dark.SetActive(true);
-            text.gameObject.SetActive(true);
             text.text = collision.gameObject.GetComponent<DayManager>().money + " C";
             shopMusic.Play();
             streetMusic.Stop();
