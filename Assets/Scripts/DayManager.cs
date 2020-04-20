@@ -54,7 +54,9 @@ public class DayManager : MonoBehaviour
         {
             if (actualFood < 0)
             {
-                GameObject.Find("DialogueManager").GetComponent<DialogueManager>().sendMessage("System", "Your family died of starvation.");
+                wifeAlive = false;
+                childAlive = false;
+                
             }
             day++;
             ToggleDay();

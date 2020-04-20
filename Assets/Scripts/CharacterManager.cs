@@ -25,6 +25,10 @@ public class CharacterManager : MonoBehaviour
             GameObject.FindObjectOfType<TransitionStart>().dayStatus++;
             GameObject.FindObjectOfType<TransitionStart>().reload();
         }
+        if (!GameObject.Find("Player").GetComponent<DayManager>().wifeAlive && !GameObject.Find("Player").GetComponent<DayManager>().childAlive)
+        {
+            GameObject.FindObjectOfType<DialogueManager>().sendMessage("System", "Your family died of starvation.");
+        }
     }
 
     public void reupdateScene(GameObject player)

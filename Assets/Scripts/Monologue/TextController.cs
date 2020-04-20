@@ -68,6 +68,10 @@ public class TextController : MonoBehaviour
 
     void EndDialogue()
     {
+        if (audio.isPlaying)
+        {
+            audio.Stop();
+        }
         if (isMonologue)
         {
             if (sceneName.Length > 0) SceneManager.LoadScene(sceneName);
