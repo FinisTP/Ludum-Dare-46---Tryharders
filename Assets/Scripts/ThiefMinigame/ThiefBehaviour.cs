@@ -6,37 +6,39 @@ public class ThiefBehaviour : MonoBehaviour
 {
     public GameObject movingPositionsHolder;
 
-    private List<Transform> movingPositions;
-    private Transform[] temp;
+    public List<Transform> movingPositions;
     public float waitTime = 4f;
+    public float time = 0;
+    public int i = 0;
+    public GameObject collider;
     void Start()
     {
-        movingPositions = new List<Transform>();
-        temp = movingPositionsHolder.GetComponentsInChildren<Transform>();
-        foreach (Transform tf in temp)
-        {
-            movingPositions.Add(tf);
-        }
-
-        StartCoroutine(Patrol());
+        collider = transform.GetChild(0).gameObject;
+        movingPositions = new List<Transform>(movingPositionsHolder.GetComponentsInChildren<Transform>());
+        movingPositions.Remove(movingPositionsHolder.transform);
     }
 
-    IEnumerator Patrol()
+    private void Update()
     {
-        for (int i = 0; i < movingPositions.Count; ++i)
+        if (collider.GetComponent<PolygonCollider2D>().bounds.Contains(GameObject.Find("Player").transform.position))
         {
-            Transform mp = movingPositions[i];
-            gameObject.GetComponent<BotController>().target = new Vector3(mp.transform.position.x, mp.transform.position.y, 0);
-            while (Vector2.Distance(mp.transform.position, gameObject.transform.position) < 0.1f)
+            RaycastHit2D hit = Physics2D.Linecast(transform.position, GameObject.Find("Player").transform.position);
+            if (hit.collider == null || (hit.collider.name != "Object" && hit.collider.name != "circle"))
             {
-                yield return null;
-                
-            }
-            yield return new WaitForSeconds(waitTime);
-            Debug.Log("asfjaosg");
-        }
-        
-    }
 
+            }
+        }
+        Transform mp = movingPositions[i];
+        Vector2 dir =- movingPositions[i].transform.position + gameObject.transform.position;
+        dir.Normalize();
+        collider.transform.eulerAngles = new Vector3(0,0,Mathf.Atan2(dir.y,dir.x)*180/Mathf.PI-90);
+        if(Vector2.Distance(movingPositions[i].transform.position, gameObject.transform.position) < 0.1f)
+        {
+            if (time > waitTime) i++;
+            time += Time.deltaTime;
+            return;
+        }
+        gameObject.GetComponent<BotController>().target = new Vector3(mp.transform.position.x, mp.transform.position.y, 0);
+    }
 
 }
