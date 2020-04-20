@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: f5458bfb25b8f0c4b94a959b79dcb392
+guid: 3e1f68169da52c146978e2bb29a69227
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9186371461854760162
-    second: second_house_0
+      213: -2429919002490121231
+    second: arrows_0
   - first:
-      213: -3562756337989262567
-    second: second_house_1
+      213: 67926103340967526
+    second: arrows_1
   - first:
-      213: -507361993757026799
-    second: second_house_2
+      213: -2938970880757876879
+    second: arrows_2
   - first:
-      213: -4184707788374646297
-    second: second_house_3
-  - first:
-      213: 6291159824847106106
-    second: second_house_4
-  - first:
-      213: 6384403203689300353
-    second: second_house_5
+      213: 5635105361348811957
+    second: arrows_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -75,7 +69,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -129,127 +123,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: second_house_0
+      name: arrows_0
       rect:
         serializedVersion: 2
-        x: 207
-        y: 0
-        width: 536
-        height: 144
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e137c51b3d3738080800000000000000
-      internalID: -9186371461854760162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: second_house_1
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 144
-        width: 536
-        height: 64
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 913e0e4acfb8e8ec0800000000000000
-      internalID: -3562756337989262567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: second_house_2
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 208
-        width: 536
-        height: 128
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 116149d64fc75f8f0800000000000000
-      internalID: -507361993757026799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: second_house_3
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 336
-        width: 536
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e16e11207eece5c0800000000000000
-      internalID: -4184707788374646297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: second_house_4
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 431
-        width: 268
-        height: 340
+        x: 1
+        y: 3
+        width: 14
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3078395780be4750800000000000000
-      internalID: 6291159824847106106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: second_house_5
-      rect:
-        serializedVersion: 2
-        x: 275
-        y: 574
-        width: 265
-        height: 196
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18144c243e4f99850800000000000000
-      internalID: 6384403203689300353
+      spriteID: 1f3da9f9a81374ed0800000000000000
+      internalID: -2429919002490121231
       vertices: []
       indices: 
       edges: []
