@@ -26,8 +26,13 @@ public class PlayerMovement : MonoBehaviour
     {
         movementCheck();
         interactCheck();
+        if(infected)
+            GameObject.Find("circle").GetComponent<SpriteRenderer>().color = Color.red;
+        else
+            GameObject.Find("circle").GetComponent<SpriteRenderer>().color = Color.green;
         if (infected)
         {
+            
             timeSneeze += Time.deltaTime;
             if (timeSneeze > 3)
             {
@@ -57,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && gameObject.GetComponent<DayManager>().gun)
         {
-            if (SceneManager.GetActiveScene().name == "DowntownScene" && gameObject.GetComponent<DayManager>().day >= 4)
+            if (SceneManager.GetActiveScene().name == "DowntownScene")
             {
                 anim.SetTrigger("picking");
                 GameObject[] list = GameObject.FindGameObjectsWithTag("Entity");
@@ -70,13 +75,16 @@ public class PlayerMovement : MonoBehaviour
                         gameObject.GetComponent<AudioSource>().Play();
                         break;
                     }
-                List<GameObject> l = new List<GameObject>();
-                for (int i = 0; i < list.Length; i++) if (list[i].GetComponent<Animator>().runtimeAnimatorController != null) l.Add(list[i]);
-                if (l.Count <= 1)
+                if (gameObject.GetComponent<DayManager>().day >= 4)
                 {
-                    if(!gameObject.GetComponent<DayManager>().wifeAlive) SceneManager.LoadScene("Ending03");
-                    else SceneManager.LoadScene("Ending05");
-                    Destroy(gameObject);
+                    List<GameObject> l = new List<GameObject>();
+                    for (int i = 0; i < list.Length; i++) if (list[i].GetComponent<Animator>().runtimeAnimatorController != null) l.Add(list[i]);
+                    if (l.Count <= 1)
+                    {
+                        if (!gameObject.GetComponent<DayManager>().wifeAlive) SceneManager.LoadScene("Ending03");
+                        else SceneManager.LoadScene("Ending05");
+                        Destroy(gameObject);
+                    }
                 }
                 return;
             }
@@ -97,8 +105,8 @@ public class PlayerMovement : MonoBehaviour
     void movementCheck()
     {
         if (!canMove) return;
-        float moveHoriontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        float moveHoriontal = Input.GetAxisRaw("Horizontal");
+        float moveVertical = Input.GetAxisRaw("Vertical");
         if (moveHoriontal != 0 || moveVertical != 0)
         {
             anim.SetBool("playerWalk", true);
@@ -111,8 +119,8 @@ public class PlayerMovement : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = (int)(-transform.position.y * 10 + 100);
         }
         else anim.SetBool("playerWalk", false);
-        //gameObject.GetComponent<Rigidbody2D>().MovePosition(new Vector2(transform.position.x+moveHoriontal*speed*Time.deltaTime, transform.position.y+ moveVertical*speed * Time.deltaTime));
-        transform.position += new Vector3(moveHoriontal * speed * Time.deltaTime, moveVertical * speed * Time.deltaTime, 0);
+        gameObject.GetComponent<Rigidbody2D>().MovePosition(new Vector2(transform.position.x+moveHoriontal*speed*Time.deltaTime, transform.position.y+ moveVertical*speed * Time.deltaTime));
+        //transform.position += new Vector3(moveHoriontal * speed * Time.deltaTime, moveVertical * speed * Time.deltaTime, 0);
         anim.SetFloat("Horizontal", moveHoriontal);
         anim.SetFloat("Vertical", moveVertical);
     }

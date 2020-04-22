@@ -23,14 +23,18 @@ MonoBehaviour:
     sentences:
     - 'You went out on the street, some people - or strange figures, move towards
       you in a distorted manner. '
-    - You should try to avoid them by not letting them step into your circle.
+    - You should try to avoid them by not letting them step into your circle. If
+      your circle stay green, you will be fine.
     - The mart in the middle of the street contains various items which may be of
       help to you.
-    - Go buy some foods, masks, or weapons to protect yourself...
+    - Mask help you narrow the infection circle, gun and knife to protect yourself
+      at some circumstances, groceries is needed for your family to survive and pill
+      cure your illness for one time only.
     - Make your way through 'em...
   familyTransitionNight:
     sentences:
     - Your family may be hungry, cook something up.
+    - And also you can go to bed to skip to the next day
   neighborhoodTransitionNight:
     sentences:
     - At night, you can go around the area and sneak into unsuspecting neighbors...

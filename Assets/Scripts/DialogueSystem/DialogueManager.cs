@@ -18,17 +18,26 @@ public class DialogueManager : MonoBehaviour
         sentences = new List<string>();
         resetAnswer();
     }
+    private void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            DisplayNextSentence();
+        }
+    }
     public void StartDialogue(Dialogue dialogue,bool random)
     {
         animator.SetBool("IsOpen", true);
         nameText.text = dialogue.name;
         sentences.Clear();
+        continueButton = true;
         if (!random)
             foreach (string sentence in dialogue.sentence)
             {
                 sentences.Add(sentence);
             }
         else sentences.Add(dialogue.sentence[Random.Range(0, dialogue.sentence.Length)]);
+        GameObject.Find("Player").GetComponent<PlayerMovement>().canMove = false;
         DisplayNextSentence();
     }
     public void returnAnswer(int i)
@@ -68,7 +77,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void DisplayNextSentence()
     {
-        if (ans != null) return;
+        if (ans != null || !continueButton) return;
         if(index >= sentences.Count)
         {
             EndDialogue();
@@ -95,7 +104,7 @@ public class DialogueManager : MonoBehaviour
             GameObject.Find("Player").GetComponent<DayManager>().food++;
             sentences.Insert(index, "You receive food enough for 1 day[" + (index + 1));
         }
-        else index++;
+        index++;
         StartCoroutine(TypeSentence(sentence.Split('|')[0].Split('[')[0]));
     }
     public void sendMessage(string author,string message)
@@ -107,20 +116,26 @@ public class DialogueManager : MonoBehaviour
     }
     IEnumerator TypeSentence(string sentence)
     {
-        string textDisplay = "";
-        continueButton = false;
-        foreach (char letter in sentence.ToCharArray())
+        if (dialogueText.text != sentence)
         {
-            textDisplay += letter;
-            dialogueText.text = textDisplay;
-            yield return new WaitForSeconds(0.02f);
+            string textDisplay = "";
+            dialogueText.text = "";
+            continueButton = false;
+            foreach (char letter in sentence.ToCharArray())
+            {
+                    textDisplay += letter;
+                    dialogueText.text = textDisplay;
+                    yield return new WaitForSeconds(0.02f);
+            }
+            continueButton = true;
         }
-        continueButton = true;
     }
     void EndDialogue()
     {
         if (!continueButton) return;
+        GameObject.Find("Player").GetComponent<PlayerMovement>().canMove = true;
         animator.SetBool("IsOpen", false);
+        sentences = new List<string>();
         index = 0;
         ans = null;
         resetAnswer();

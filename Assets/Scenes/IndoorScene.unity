@@ -5322,7 +5322,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 298, y: -100.1}
-  m_SizeDelta: {x: 100, y: 125}
+  m_SizeDelta: {x: 134.51, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1776545348
 MonoBehaviour:
@@ -5337,7 +5337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.35943887, b: 0.33490568, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7017,6 +7017,11 @@ PrefabInstance:
     - target: {fileID: 4324646613508074233, guid: 978614b07bbf7ce498ea649db2b6c474,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4324646613734378655, guid: 978614b07bbf7ce498ea649db2b6c474,
+        type: 3}
+      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4904328781414528139, guid: 978614b07bbf7ce498ea649db2b6c474,

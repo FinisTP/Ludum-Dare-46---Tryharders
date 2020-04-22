@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4396,7 +4396,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.7285261, y: 0.31794226}
+  m_Offset: {x: 0.7285261, y: -0.9747586}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4407,7 +4407,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.7026653, y: 1.5016778}
+  m_Size: {x: 5.7026653, y: 4.087079}
   m_EdgeRadius: 0
 --- !u!114 &1953764885
 MonoBehaviour:
@@ -4736,6 +4736,11 @@ PrefabInstance:
     - target: {fileID: 1785038883, guid: b6cc2bc2425782446b94abf87b6ed064, type: 3}
       propertyPath: dayStatus
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 396873271345333304, guid: b6cc2bc2425782446b94abf87b6ed064,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9046161580126305324, guid: b6cc2bc2425782446b94abf87b6ed064,
         type: 3}

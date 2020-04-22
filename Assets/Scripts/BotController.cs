@@ -40,7 +40,10 @@ public class BotController : MonoBehaviour
                 timeSneeze = 0;
                 anim.SetTrigger("punch"); 
                 GameObject player = GameObject.Find("Player");
-                if(gameObject.GetComponent<EdgeCollider2D>().bounds.Contains(player.transform.position)) player.GetComponent<PlayerMovement>().infected = true;
+                if (gameObject.GetComponent<EdgeCollider2D>().bounds.Contains(player.transform.position))
+                {
+                    player.GetComponent<PlayerMovement>().infected = true;
+                }
             }
         }
         if ((pedestrian && timeStop < 0) || neighbor)
