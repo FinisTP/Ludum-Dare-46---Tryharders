@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -356,7 +356,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &284936422
 Transform:
   m_ObjectHideFlags: 0
@@ -4900,31 +4900,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 284936422}
     m_Modifications:
-    - target: {fileID: 5347447447268793942, guid: 95ac6633b95374f47985b53a8028f1e8,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5347447447934402345, guid: 95ac6633b95374f47985b53a8028f1e8,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0924
-      objectReference: {fileID: 0}
-    - target: {fileID: 5347447447934402345, guid: 95ac6633b95374f47985b53a8028f1e8,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0924
-      objectReference: {fileID: 0}
-    - target: {fileID: 5347447447934402345, guid: 95ac6633b95374f47985b53a8028f1e8,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.0924
-      objectReference: {fileID: 0}
-    - target: {fileID: 5347447448571779287, guid: 95ac6633b95374f47985b53a8028f1e8,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1785038884}
     - target: {fileID: 5347447448581954406, guid: 95ac6633b95374f47985b53a8028f1e8,
         type: 3}
       propertyPath: m_Name
@@ -5040,10 +5015,5 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1785038884}
-    - target: {fileID: 7558194776439708328, guid: 95ac6633b95374f47985b53a8028f1e8,
-        type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DisplayNextSentence
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95ac6633b95374f47985b53a8028f1e8, type: 3}

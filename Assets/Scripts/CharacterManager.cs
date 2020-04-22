@@ -49,7 +49,7 @@ public class CharacterManager : MonoBehaviour
             {
                 GameObject.Find("Player").GetComponent<DayManager>().choose1 = false;
                 warnOutside = true;
-                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You had so much fun with Athena... But she kept you f*cking on for two days straight...");
+                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You had so much fun with Athena... But she literally f*cked you up for two days straight...");
             }
         }
         else if (SceneManager.GetActiveScene().name == "IndoorScene")
@@ -63,7 +63,7 @@ public class CharacterManager : MonoBehaviour
             {
                 GameObject.Find("Player").GetComponent<DayManager>().ToggleNight();
                 reupdateScene(GameObject.Find("Player"));
-                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You chose to stay close with your family. Its dark now, your family is hungry");
+                GameObject.FindObjectOfType<DialogueManager>().sendMessage("", "You chose to stay close with your family. Its dark now, your family is hungry.");
             }
             if (!GameObject.Find("Player").GetComponent<DayManager>().wifeAlive || !GameObject.Find("Player").GetComponent<DayManager>().childAlive && !warnInside)
             {

@@ -34,7 +34,7 @@ MonoBehaviour:
   familyTransitionNight:
     sentences:
     - Your family may be hungry, cook something up.
-    - And also you can go to bed to skip to the next day
+    - And also you can go to bed to skip to the next day.
   neighborhoodTransitionNight:
     sentences:
     - At night, you can go around the area and sneak into unsuspecting neighbors...
