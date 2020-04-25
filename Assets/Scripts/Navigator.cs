@@ -12,6 +12,7 @@ public class Navigator : MonoBehaviour
     public bool bell = false;
     public bool interactTalk = false;
     public bool nextday = false;
+    public bool shop = false;
     public int money = 0;
     public int food = 0;
     public GameObject cooking;
@@ -31,6 +32,12 @@ public class Navigator : MonoBehaviour
         if (typoCheck != null && typoCheck.activeSelf) return;
         if (Input.GetKeyDown(KeyCode.F) && inside)
         {
+            if (shop)
+            {
+                GameObject.FindObjectOfType<Shop>().open();
+                GameObject.Find("PlayerHint").GetComponent<Text>().text = "";
+            }
+            else
             if(money > 0 || money < 0)
             {
                 if (money < 0)

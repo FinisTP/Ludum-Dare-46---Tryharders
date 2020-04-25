@@ -60,7 +60,6 @@ public class TextController : MonoBehaviour
 
     IEnumerator TypeSentence (string sentence)
     {
-        Debug.Log(sentence);
         if (GameObject.Find("Player") != null) manager = GameObject.Find("Player").GetComponent<DayManager>();
         if (isMonologue || (manager != null && !manager.alreadyTypo.Contains(sentence)))
             {
