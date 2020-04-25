@@ -48,6 +48,7 @@ public class TextController : MonoBehaviour
         {
             currentText.text = sentences[i];
             isTyping = false;
+            if (audio.isPlaying) audio.Stop();
         } else
         {
             i++;
