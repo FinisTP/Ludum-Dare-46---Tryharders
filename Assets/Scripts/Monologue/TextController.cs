@@ -60,7 +60,7 @@ public class TextController : MonoBehaviour
 
     IEnumerator TypeSentence (string sentence)
     {
-        Debug.Log(sentence);
+        //Debug.Log(sentence);
         if (GameObject.Find("Player") != null) manager = GameObject.Find("Player").GetComponent<DayManager>();
         if (isMonologue || (manager != null && !manager.alreadyTypo.Contains(sentence)))
             {
@@ -82,7 +82,7 @@ public class TextController : MonoBehaviour
                     audio.Stop();
                 }
             }
-        else manager.alreadyTypo.Add(sentence);
+        manager.alreadyTypo.Add(sentence);
         
     }
 
