@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public bool canMove = true;
     public Sprite dickson;
     public Sprite dummy1;
-
+    public RuntimeAnimatorController mask, nomask;
     void Start()
     {
         DontDestroyOnLoad(gameObject);
@@ -26,7 +26,13 @@ public class PlayerMovement : MonoBehaviour
     {
         movementCheck();
         interactCheck();
-        if(infected)
+        if (GetComponent<DayManager>().mask > 0)
+        {
+            GetComponent<Animator>().runtimeAnimatorController = mask;
+        }
+        else
+            GetComponent<Animator>().runtimeAnimatorController = nomask;
+        if (infected)
             GameObject.Find("circle").GetComponent<SpriteRenderer>().color = Color.red;
         else
             GameObject.Find("circle").GetComponent<SpriteRenderer>().color = Color.green;
@@ -73,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
                         list[i].transform.localScale *= new Vector2(Random.Range(0,10)>5?-1:1, 1);
                         Destroy(list[i].GetComponent<BotController>());
                         gameObject.GetComponent<AudioSource>().Play();
+                        transform.GetChild(0).GetComponent<AudioSource>().Play();
                         break;
                     }
                 if (gameObject.GetComponent<DayManager>().day >= 4)
@@ -92,15 +99,31 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && gameObject.GetComponent<DayManager>().knife)
         {
             anim.SetTrigger("attack");
-            if(GameObject.Find("Dickson(Clone)") != null && Vector2.Distance(GameObject.Find("Dickson(Clone)").transform.position,transform.position) < 3)
-            {
-                GameObject.Find("Dickson(Clone)").GetComponent<Animator>().runtimeAnimatorController = null;
-                GameObject.Find("Dickson(Clone)").GetComponent<SpriteRenderer>().sprite = dickson;
-                Destroy(GameObject.Find("Dickson(Clone)").GetComponent<BotController>());
-                Destroy(GameObject.Find("Dickson(Clone)").GetComponent<ThiefBehaviour>());
-                gameObject.GetComponent<DayManager>().dicksondie = true;
-            }
+            StartCoroutine(killPeople());
         }
+    }
+    IEnumerator killPeople()
+    {
+        yield return new WaitForSeconds(0.4f);
+        if (GameObject.Find("Dickson(Clone)") != null && Vector2.Distance(GameObject.Find("Dickson(Clone)").transform.position, transform.position) < 1)
+        {
+            GameObject.Find("Dickson(Clone)").GetComponent<Animator>().runtimeAnimatorController = null;
+            GameObject.Find("Dickson(Clone)").GetComponent<SpriteRenderer>().sprite = dickson;
+            Destroy(GameObject.Find("Dickson(Clone)").GetComponent<BotController>());
+            Destroy(GameObject.Find("Dickson(Clone)").GetComponent<ThiefBehaviour>());
+            gameObject.GetComponent<DayManager>().dicksondie = true;
+            transform.GetChild(0).GetComponent<AudioSource>().Play();
+        }
+        GameObject[] list = GameObject.FindGameObjectsWithTag("Entity");
+        for (int i = 0; i < list.Length; i++) if (list[i].GetComponent<Animator>().runtimeAnimatorController != null && list[i] != gameObject && Vector2.Distance(transform.position, list[i].transform.position) < 1)
+            {
+                list[i].GetComponent<Animator>().runtimeAnimatorController = null;
+                list[i].GetComponent<SpriteRenderer>().sprite = dummy1;
+                list[i].transform.localScale *= new Vector2(Random.Range(0, 10) > 5 ? -1 : 1, 1);
+                Destroy(list[i].GetComponent<BotController>());
+                transform.GetChild(0).GetComponent<AudioSource>().Play();
+                break;
+            }
     }
     void movementCheck()
     {
