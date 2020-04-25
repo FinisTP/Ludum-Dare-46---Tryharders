@@ -216,7 +216,6 @@ GameObject:
   - component: {fileID: 108413633}
   - component: {fileID: 108413635}
   - component: {fileID: 108413636}
-  - component: {fileID: 108413637}
   m_Layer: 0
   m_Name: Shop
   m_TagString: Untagged
@@ -2741,6 +2740,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656226855258497528, guid: 978614b07bbf7ce498ea649db2b6c474,
+        type: 3}
+      propertyPath: dayStatus
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656226855441479614, guid: 978614b07bbf7ce498ea649db2b6c474,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000015259
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656226855441479614, guid: 978614b07bbf7ce498ea649db2b6c474,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 655.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656226855441479614, guid: 978614b07bbf7ce498ea649db2b6c474,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656226855441479614, guid: 978614b07bbf7ce498ea649db2b6c474,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 371.9
       objectReference: {fileID: 0}
     - target: {fileID: 3656226855598772718, guid: 978614b07bbf7ce498ea649db2b6c474,
         type: 3}
